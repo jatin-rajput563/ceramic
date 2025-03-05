@@ -7,6 +7,8 @@
     --fs-3xl: 24px;
     --fs-4xl: 56px;
     --fs-5xl: 64px;
+    /* ---------- */
+    --light-red: #FFEBEB;
 }
 
 .fs-sm {
@@ -39,4 +41,8 @@
 
 .fs-5xl {
     font-size: var(--fs-5xl) !important;
+}
+
+.bg-red {
+    background-color: var(--light-red) !important;
 }
