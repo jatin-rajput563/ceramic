@@ -198,10 +198,34 @@
     border-radius: 24px;
 }
 
-/* ----------section-6--------- */
+/* ----------section-7--------- */
 .py-140 {
     padding-top: 140px;
     padding-bottom: 140px;
+}
+
+.faq .accordion {
+    max-width: 912px;
+    --bs-accordion-border-width: none !important;
+    --bs-accordion-active-bg: none !important;
+    --bs-accordion-btn-focus-box-shadow: none !important;
+}
+
+.faq .accordion-item {
+    box-shadow: 0px 2px 44px 3px #5757571A;
+    border-radius: 16px !important;
+}
+
+.faq .accordion-button {
+    border-radius: 16px !important;
+}
+
+.faq .accordion-body {
+    padding-top: 0 !important;
+}
+
+.faq .accordion-button::after {
+    background-image: url(../images/png/accordion-svg.png) !important;
 }
 
 /* --------------- */
