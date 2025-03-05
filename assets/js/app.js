@@ -38,3 +38,84 @@ $('.slider').slick({
         }
     ]
 });
+
+
+
+// section 2
+const cardData = [
+    {
+        image: "./assets/images/png/sec-2-img-1.png",
+        title: "Kitchen Backsplash",
+        description: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.",
+        text: "Learn more",
+        svg: "./assets/images/svg/learn-svg.svg",
+    },
+    {
+        image: "./assets/images/png/sec-2-img-2.png",
+        title: "Custom Showers",
+        description: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.",
+        text: "Learn more",
+        svg: "./assets/images/svg/learn-svg.svg",
+    },
+    {
+        image: "./assets/images/png/sec-2-img-3.png",
+        title: "Custom Flooring",
+        description: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.",
+        text: "Learn more",
+        svg: "./assets/images/svg/learn-svg.svg",
+    },
+    {
+        image: "./assets/images/png/sec-2-img-4.png",
+        title: "Large Format Tiling",
+        description: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.",
+        text: "Learn more",
+        svg: "./assets/images/svg/learn-svg.svg",
+    },
+    {
+        image: "./assets/images/png/sec-2-img-5.png",
+        title: "Wall Tiling",
+        description: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.",
+        text: "Learn more",
+        svg: "./assets/images/svg/learn-svg.svg",
+    },
+    {
+        image: "./assets/images/png/sec-2-img-6.png",
+        title: "ADA Compliant Showers",
+        description: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.",
+        text: "Learn more",
+        svg: "./assets/images/svg/learn-svg.svg",
+    },
+    {
+        image: "./assets/images/png/sec-2-img-4.png",
+        title: "Fireplace Tiling",
+        description: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.",
+        text: "Learn more",
+        svg: "./assets/images/svg/learn-svg.svg",
+    },
+]
+
+const cardContainer = document.getElementById("sec-2-cards");
+cardContainer.innerHTML = cardData.map(card => `
+    <div class="col-12 col-lg-4 col-sm-6 mb-4 d-flex justify-content-center">
+                    <div class="sec-2-card w-100 ">
+                        <img class="mb-4 w-100" src="${card.image}" alt="image">
+                        <h3 class="fw-semibold fs-3xl lh-38 text-black mb-12">${card.title}</h3>
+                        <p class="fw-normal fs-lg lh-25 text-black mb-4">${card.description}</p>
+                        <div class="d-flex align-items-center gap-10">
+                            <p class="fw-semibold fs-lg lh-25 text-red mb-0">${card.text}</p>
+                            <img src="${card.svg}" alt="svg">
+                        </div>
+                    </div>
+                </div>
+    `)
+    .join('');
+// section 3
+const cardData2 = [
+    {
+        image: "./assets/images/png/sec-2-img-1.png",
+        title: "Kitchen Backsplash",
+        description: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.",
+        text: "Learn more",
+        svg: "./assets/images/svg/learn-svg.svg",
+    },
+]
