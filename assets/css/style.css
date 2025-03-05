@@ -134,6 +134,7 @@
     max-width: 316px;
 }
 
+/* ----------section-4--------- */
 .slider-box {
     width: 364px;
     border-radius: 24px;
@@ -143,6 +144,42 @@
 
 .mt-56 {
     margin-top: 56px;
+}
+
+
+/* ----------section-5--------- */
+.mx-w-592 {
+    max-width: 592px;
+}
+
+.mx-w-508 {
+    max-width: 508px;
+}
+
+.sec-5-box {
+    max-width: 592px;
+    border-radius: 24px;
+    padding: 16px;
+    box-shadow: 0px 1px 28px 1px #4747471A;
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+.view-btn {
+    padding: 20px 32px 20px 32px;
+    border-radius: 56px;
+    border: 1px solid #FF0000;
+    color: #FF0000;
+}
+
+.ml-63 {
+    margin-left: 63px;
+}
+
+.pb-140 {
+    padding-bottom: 140px;
 }
 
 /* --------------- */
