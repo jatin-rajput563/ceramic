@@ -198,6 +198,12 @@
     border-radius: 24px;
 }
 
+/* ----------section-6--------- */
+.py-140 {
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
 /* --------------- */
 .lh-19 {
     line-height: 19.2px;
