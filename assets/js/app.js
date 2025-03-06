@@ -1,36 +1,323 @@
+// navbar
 const navbarbtn = () => {
     document.getElementById("name").classList.toggle("show-navbar")
-    document.getElementById("rotates").classList.toggle("rotate40")
+    document.getElementById("rotates").classList.toggle("rotate-42")
     document.getElementById("transparent").classList.toggle("bg-transparent")
-    document.getElementById("rotates-2").classList.toggle("rotate-45")
+    document.getElementById("rotates-2").classList.toggle("rotate-43")
     document.body.classList.toggle("overflow-hidden")
 }
 
-$('.slider').slick({
-    dots: true,
+
+
+
+//  What we do
+const cardsData = [
+    {
+        img: "./assets/images/png/section-2-img-1.png",
+        title: "Kitchen Backsplash",
+        description: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.",
+        text: "Learn more",
+        svg: `<svg width="27" height="12" viewBox="0 0 27 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.5 5.61914C1.08579 5.61914 0.75 5.95493 0.75 6.36914C0.75 6.78335 1.08579 7.11914 1.5 7.11914V5.61914ZM26.0303 6.89947C26.3232 6.60658 26.3232 6.1317 26.0303 5.83881L21.2574 1.06584C20.9645 0.772946 20.4896 0.772946 20.1967 1.06584C19.9038 1.35873 19.9038 1.83361 20.1967 2.1265L24.4393 6.36914L20.1967 10.6118C19.9038 10.9047 19.9038 11.3795 20.1967 11.6724C20.4896 11.9653 20.9645 11.9653 21.2574 11.6724L26.0303 6.89947ZM1.5 7.11914H25.5V5.61914H1.5V7.11914Z" fill="#FF0000"/>
+</svg>
+`,
+    },
+    {
+        img: "./assets/images/png/section-2-img-2.png",
+        title: "Custom Showers",
+        description: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.",
+        text: "Learn more",
+        svg: `<svg width="27" height="12" viewBox="0 0 27 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.5 5.61914C1.08579 5.61914 0.75 5.95493 0.75 6.36914C0.75 6.78335 1.08579 7.11914 1.5 7.11914V5.61914ZM26.0303 6.89947C26.3232 6.60658 26.3232 6.1317 26.0303 5.83881L21.2574 1.06584C20.9645 0.772946 20.4896 0.772946 20.1967 1.06584C19.9038 1.35873 19.9038 1.83361 20.1967 2.1265L24.4393 6.36914L20.1967 10.6118C19.9038 10.9047 19.9038 11.3795 20.1967 11.6724C20.4896 11.9653 20.9645 11.9653 21.2574 11.6724L26.0303 6.89947ZM1.5 7.11914H25.5V5.61914H1.5V7.11914Z" fill="#FF0000"/>
+</svg>
+`,
+    },
+    {
+        img: "./assets/images/png/section-2-img-3.png",
+        title: "Custom Flooring",
+        description: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.",
+        text: "Learn more",
+        svg: `<svg width="27" height="12" viewBox="0 0 27 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.5 5.61914C1.08579 5.61914 0.75 5.95493 0.75 6.36914C0.75 6.78335 1.08579 7.11914 1.5 7.11914V5.61914ZM26.0303 6.89947C26.3232 6.60658 26.3232 6.1317 26.0303 5.83881L21.2574 1.06584C20.9645 0.772946 20.4896 0.772946 20.1967 1.06584C19.9038 1.35873 19.9038 1.83361 20.1967 2.1265L24.4393 6.36914L20.1967 10.6118C19.9038 10.9047 19.9038 11.3795 20.1967 11.6724C20.4896 11.9653 20.9645 11.9653 21.2574 11.6724L26.0303 6.89947ZM1.5 7.11914H25.5V5.61914H1.5V7.11914Z" fill="#FF0000"/>
+</svg>
+`,
+    },
+    {
+        img: "./assets/images/png/section-2-img-4.png",
+        title: "Large Format Tiling",
+        description: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.",
+        text: "Learn more",
+        svg: `<svg width="27" height="12" viewBox="0 0 27 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.5 5.61914C1.08579 5.61914 0.75 5.95493 0.75 6.36914C0.75 6.78335 1.08579 7.11914 1.5 7.11914V5.61914ZM26.0303 6.89947C26.3232 6.60658 26.3232 6.1317 26.0303 5.83881L21.2574 1.06584C20.9645 0.772946 20.4896 0.772946 20.1967 1.06584C19.9038 1.35873 19.9038 1.83361 20.1967 2.1265L24.4393 6.36914L20.1967 10.6118C19.9038 10.9047 19.9038 11.3795 20.1967 11.6724C20.4896 11.9653 20.9645 11.9653 21.2574 11.6724L26.0303 6.89947ZM1.5 7.11914H25.5V5.61914H1.5V7.11914Z" fill="#FF0000"/>
+</svg>
+`,
+    },
+    {
+        img: "./assets/images/png/section-2-img-5.png",
+        title: "Wall Tiling",
+        description: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.",
+        text: "Learn more",
+        svg: `<svg width="27" height="12" viewBox="0 0 27 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.5 5.61914C1.08579 5.61914 0.75 5.95493 0.75 6.36914C0.75 6.78335 1.08579 7.11914 1.5 7.11914V5.61914ZM26.0303 6.89947C26.3232 6.60658 26.3232 6.1317 26.0303 5.83881L21.2574 1.06584C20.9645 0.772946 20.4896 0.772946 20.1967 1.06584C19.9038 1.35873 19.9038 1.83361 20.1967 2.1265L24.4393 6.36914L20.1967 10.6118C19.9038 10.9047 19.9038 11.3795 20.1967 11.6724C20.4896 11.9653 20.9645 11.9653 21.2574 11.6724L26.0303 6.89947ZM1.5 7.11914H25.5V5.61914H1.5V7.11914Z" fill="#FF0000"/>
+</svg>
+`,
+    },
+    {
+        img: "./assets/images/png/section-2-img-6.png",
+        title: "ADA Compliant Showers",
+        description: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.",
+        text: "Learn more",
+        svg: `<svg width="27" height="12" viewBox="0 0 27 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.5 5.61914C1.08579 5.61914 0.75 5.95493 0.75 6.36914C0.75 6.78335 1.08579 7.11914 1.5 7.11914V5.61914ZM26.0303 6.89947C26.3232 6.60658 26.3232 6.1317 26.0303 5.83881L21.2574 1.06584C20.9645 0.772946 20.4896 0.772946 20.1967 1.06584C19.9038 1.35873 19.9038 1.83361 20.1967 2.1265L24.4393 6.36914L20.1967 10.6118C19.9038 10.9047 19.9038 11.3795 20.1967 11.6724C20.4896 11.9653 20.9645 11.9653 21.2574 11.6724L26.0303 6.89947ZM1.5 7.11914H25.5V5.61914H1.5V7.11914Z" fill="#FF0000"/>
+</svg>
+`,
+    },
+    {
+        img: "./assets/images/png/section-2-img-5.png",
+        title: "Fireplace Tiling",
+        description: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.",
+        text: "Learn more",
+        svg: `<svg width="27" height="12" viewBox="0 0 27 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.5 5.61914C1.08579 5.61914 0.75 5.95493 0.75 6.36914C0.75 6.78335 1.08579 7.11914 1.5 7.11914V5.61914ZM26.0303 6.89947C26.3232 6.60658 26.3232 6.1317 26.0303 5.83881L21.2574 1.06584C20.9645 0.772946 20.4896 0.772946 20.1967 1.06584C19.9038 1.35873 19.9038 1.83361 20.1967 2.1265L24.4393 6.36914L20.1967 10.6118C19.9038 10.9047 19.9038 11.3795 20.1967 11.6724C20.4896 11.9653 20.9645 11.9653 21.2574 11.6724L26.0303 6.89947ZM1.5 7.11914H25.5V5.61914H1.5V7.11914Z" fill="#FF0000"/>
+</svg>
+`,
+    },
+
+];
+
+const container = document.getElementById("cardsContainer");
+
+container.innerHTML = cardsData.map(card => `
+            <div class="col-12 col-lg-4 col-sm-6 mb-4 d-flex justify-content-center">
+                    <div class="img-card w-100">
+                        <img class="w-100 border-radius-12 mb-4" src="${card.img}" alt="img">
+                        <h3 class="font-family-primary fw-semibold fs-4 lh-38 text-black mb-12">${card.title}</h3>
+                        <p class="font-family-primary fw-normal fs-6 lh-25 text-black mb-4">${card.description}</p>
+                        <div class="d-flex align-items-center gap-10">
+                           <h6 class="font-family-primary fw-semibold fs-6 lh-25 color-red mb-0">${card.text}</h6>
+                           <div class="">${card.svg}</div>
+                        </div>
+                    </div>
+            </div>
+        `).join('');
+
+
+
+
+// Our Blog
+const cardData = [
+    {
+        img: "./assets/images/png/section-7-img.png",
+        description: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.",
+        text: "Learn more",
+        svg: `<svg width="27" height="12" viewBox="0 0 27 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.5 5.61914C1.08579 5.61914 0.75 5.95493 0.75 6.36914C0.75 6.78335 1.08579 7.11914 1.5 7.11914V5.61914ZM26.0303 6.89947C26.3232 6.60658 26.3232 6.1317 26.0303 5.83881L21.2574 1.06584C20.9645 0.772946 20.4896 0.772946 20.1967 1.06584C19.9038 1.35873 19.9038 1.83361 20.1967 2.1265L24.4393 6.36914L20.1967 10.6118C19.9038 10.9047 19.9038 11.3795 20.1967 11.6724C20.4896 11.9653 20.9645 11.9653 21.2574 11.6724L26.0303 6.89947ZM1.5 7.11914H25.5V5.61914H1.5V7.11914Z" fill="#FF0000"/>
+</svg>`
+    },
+    {
+        img: "./assets/images/png/section-7-img.png",
+        description: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.",
+        text: "Learn more",
+        svg: `<svg width="27" height="12" viewBox="0 0 27 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.5 5.61914C1.08579 5.61914 0.75 5.95493 0.75 6.36914C0.75 6.78335 1.08579 7.11914 1.5 7.11914V5.61914ZM26.0303 6.89947C26.3232 6.60658 26.3232 6.1317 26.0303 5.83881L21.2574 1.06584C20.9645 0.772946 20.4896 0.772946 20.1967 1.06584C19.9038 1.35873 19.9038 1.83361 20.1967 2.1265L24.4393 6.36914L20.1967 10.6118C19.9038 10.9047 19.9038 11.3795 20.1967 11.6724C20.4896 11.9653 20.9645 11.9653 21.2574 11.6724L26.0303 6.89947ZM1.5 7.11914H25.5V5.61914H1.5V7.11914Z" fill="#FF0000"/>
+</svg>`
+    },
+    {
+        img: "./assets/images/png/section-7-img.png",
+        description: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.",
+        text: "Learn more",
+        svg: `<svg width="27" height="12" viewBox="0 0 27 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.5 5.61914C1.08579 5.61914 0.75 5.95493 0.75 6.36914C0.75 6.78335 1.08579 7.11914 1.5 7.11914V5.61914ZM26.0303 6.89947C26.3232 6.60658 26.3232 6.1317 26.0303 5.83881L21.2574 1.06584C20.9645 0.772946 20.4896 0.772946 20.1967 1.06584C19.9038 1.35873 19.9038 1.83361 20.1967 2.1265L24.4393 6.36914L20.1967 10.6118C19.9038 10.9047 19.9038 11.3795 20.1967 11.6724C20.4896 11.9653 20.9645 11.9653 21.2574 11.6724L26.0303 6.89947ZM1.5 7.11914H25.5V5.61914H1.5V7.11914Z" fill="#FF0000"/>
+</svg>`
+    }
+];
+
+const cardContainer = document.getElementById("blog-container");
+
+cardContainer.innerHTML = cardData.map(card => `
+            <div class="col-sm-6 col-lg-4 mb-4 mb-lg-0 d-flex mx-auto justify-content-center">
+                <div class="blog-img-card w-100">
+                    <img class="w-100 border-radius-12 mb-4" src="${card.img}" alt="img">
+                    <p class="font-family-primary fw-semibold fs-4 lh-38 text-black mb-3">${card.description}</p>
+                    <div class="d-flex align-items-center gap-10">
+                        <h6 class="font-family-primary fw-semibold fs-6 lh-25 color-red mb-0">${card.text}</h6>
+                        <div class="">${card.svg}</div>
+                    </div>
+                </div>
+            </div>
+        `).join('');
+
+
+
+
+// We provide services in these areas
+const locationData = [
+    {
+        svg: `<svg width="23" height="27" viewBox="0 0 23 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.2754 8.93164C20.9629 3.15664 15.9254 0.556641 11.5004 0.556641C11.5004 0.556641 11.5004 0.556641 11.4879 0.556641C7.07536 0.556641 2.02536 3.14414 0.712863 8.91914C-0.749637 15.3691 3.20036 20.8316 6.77536 24.2691C8.10036 25.5441 9.80036 26.1816 11.5004 26.1816C13.2004 26.1816 14.9004 25.5441 16.2129 24.2691C19.7879 20.8316 23.7379 15.3816 22.2754 8.93164ZM11.5004 15.1941C9.32536 15.1941 7.56286 13.4316 7.56286 11.2566C7.56286 9.08164 9.32536 7.31914 11.5004 7.31914C13.6754 7.31914 15.4379 9.08164 15.4379 11.2566C15.4379 13.4316 13.6754 15.1941 11.5004 15.1941Z" fill="white"/>
+</svg>
+`,
+        text: "Knoxville",
+    },
+    {
+        svg: `<svg width="23" height="27" viewBox="0 0 23 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.2754 8.93164C20.9629 3.15664 15.9254 0.556641 11.5004 0.556641C11.5004 0.556641 11.5004 0.556641 11.4879 0.556641C7.07536 0.556641 2.02536 3.14414 0.712863 8.91914C-0.749637 15.3691 3.20036 20.8316 6.77536 24.2691C8.10036 25.5441 9.80036 26.1816 11.5004 26.1816C13.2004 26.1816 14.9004 25.5441 16.2129 24.2691C19.7879 20.8316 23.7379 15.3816 22.2754 8.93164ZM11.5004 15.1941C9.32536 15.1941 7.56286 13.4316 7.56286 11.2566C7.56286 9.08164 9.32536 7.31914 11.5004 7.31914C13.6754 7.31914 15.4379 9.08164 15.4379 11.2566C15.4379 13.4316 13.6754 15.1941 11.5004 15.1941Z" fill="white"/>
+</svg>
+`,
+        text: "Sevierville",
+    },
+    {
+        svg: `<svg width="23" height="27" viewBox="0 0 23 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.2754 8.93164C20.9629 3.15664 15.9254 0.556641 11.5004 0.556641C11.5004 0.556641 11.5004 0.556641 11.4879 0.556641C7.07536 0.556641 2.02536 3.14414 0.712863 8.91914C-0.749637 15.3691 3.20036 20.8316 6.77536 24.2691C8.10036 25.5441 9.80036 26.1816 11.5004 26.1816C13.2004 26.1816 14.9004 25.5441 16.2129 24.2691C19.7879 20.8316 23.7379 15.3816 22.2754 8.93164ZM11.5004 15.1941C9.32536 15.1941 7.56286 13.4316 7.56286 11.2566C7.56286 9.08164 9.32536 7.31914 11.5004 7.31914C13.6754 7.31914 15.4379 9.08164 15.4379 11.2566C15.4379 13.4316 13.6754 15.1941 11.5004 15.1941Z" fill="white"/>
+</svg>
+`,
+        text: "Maynardville",
+    },
+    {
+        svg: `<svg width="23" height="27" viewBox="0 0 23 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.2754 8.93164C20.9629 3.15664 15.9254 0.556641 11.5004 0.556641C11.5004 0.556641 11.5004 0.556641 11.4879 0.556641C7.07536 0.556641 2.02536 3.14414 0.712863 8.91914C-0.749637 15.3691 3.20036 20.8316 6.77536 24.2691C8.10036 25.5441 9.80036 26.1816 11.5004 26.1816C13.2004 26.1816 14.9004 25.5441 16.2129 24.2691C19.7879 20.8316 23.7379 15.3816 22.2754 8.93164ZM11.5004 15.1941C9.32536 15.1941 7.56286 13.4316 7.56286 11.2566C7.56286 9.08164 9.32536 7.31914 11.5004 7.31914C13.6754 7.31914 15.4379 9.08164 15.4379 11.2566C15.4379 13.4316 13.6754 15.1941 11.5004 15.1941Z" fill="white"/>
+</svg>
+`,
+        text: "Knoxville",
+    },
+    {
+        svg: `<svg width="23" height="27" viewBox="0 0 23 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.2754 8.93164C20.9629 3.15664 15.9254 0.556641 11.5004 0.556641C11.5004 0.556641 11.5004 0.556641 11.4879 0.556641C7.07536 0.556641 2.02536 3.14414 0.712863 8.91914C-0.749637 15.3691 3.20036 20.8316 6.77536 24.2691C8.10036 25.5441 9.80036 26.1816 11.5004 26.1816C13.2004 26.1816 14.9004 25.5441 16.2129 24.2691C19.7879 20.8316 23.7379 15.3816 22.2754 8.93164ZM11.5004 15.1941C9.32536 15.1941 7.56286 13.4316 7.56286 11.2566C7.56286 9.08164 9.32536 7.31914 11.5004 7.31914C13.6754 7.31914 15.4379 9.08164 15.4379 11.2566C15.4379 13.4316 13.6754 15.1941 11.5004 15.1941Z" fill="white"/>
+</svg>
+`,
+        text: "Sevierville",
+    },
+    {
+        svg: `<svg width="23" height="27" viewBox="0 0 23 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.2754 8.93164C20.9629 3.15664 15.9254 0.556641 11.5004 0.556641C11.5004 0.556641 11.5004 0.556641 11.4879 0.556641C7.07536 0.556641 2.02536 3.14414 0.712863 8.91914C-0.749637 15.3691 3.20036 20.8316 6.77536 24.2691C8.10036 25.5441 9.80036 26.1816 11.5004 26.1816C13.2004 26.1816 14.9004 25.5441 16.2129 24.2691C19.7879 20.8316 23.7379 15.3816 22.2754 8.93164ZM11.5004 15.1941C9.32536 15.1941 7.56286 13.4316 7.56286 11.2566C7.56286 9.08164 9.32536 7.31914 11.5004 7.31914C13.6754 7.31914 15.4379 9.08164 15.4379 11.2566C15.4379 13.4316 13.6754 15.1941 11.5004 15.1941Z" fill="white"/>
+</svg>
+`,
+        text: "Maynardville",
+    },
+    {
+        svg: `<svg width="23" height="27" viewBox="0 0 23 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.2754 8.93164C20.9629 3.15664 15.9254 0.556641 11.5004 0.556641C11.5004 0.556641 11.5004 0.556641 11.4879 0.556641C7.07536 0.556641 2.02536 3.14414 0.712863 8.91914C-0.749637 15.3691 3.20036 20.8316 6.77536 24.2691C8.10036 25.5441 9.80036 26.1816 11.5004 26.1816C13.2004 26.1816 14.9004 25.5441 16.2129 24.2691C19.7879 20.8316 23.7379 15.3816 22.2754 8.93164ZM11.5004 15.1941C9.32536 15.1941 7.56286 13.4316 7.56286 11.2566C7.56286 9.08164 9.32536 7.31914 11.5004 7.31914C13.6754 7.31914 15.4379 9.08164 15.4379 11.2566C15.4379 13.4316 13.6754 15.1941 11.5004 15.1941Z" fill="white"/>
+</svg>
+`,
+        text: "Knoxville",
+    },
+    {
+        svg: `<svg width="23" height="27" viewBox="0 0 23 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.2754 8.93164C20.9629 3.15664 15.9254 0.556641 11.5004 0.556641C11.5004 0.556641 11.5004 0.556641 11.4879 0.556641C7.07536 0.556641 2.02536 3.14414 0.712863 8.91914C-0.749637 15.3691 3.20036 20.8316 6.77536 24.2691C8.10036 25.5441 9.80036 26.1816 11.5004 26.1816C13.2004 26.1816 14.9004 25.5441 16.2129 24.2691C19.7879 20.8316 23.7379 15.3816 22.2754 8.93164ZM11.5004 15.1941C9.32536 15.1941 7.56286 13.4316 7.56286 11.2566C7.56286 9.08164 9.32536 7.31914 11.5004 7.31914C13.6754 7.31914 15.4379 9.08164 15.4379 11.2566C15.4379 13.4316 13.6754 15.1941 11.5004 15.1941Z" fill="white"/>
+</svg>
+`,
+        text: "Sevierville",
+    },
+    {
+        svg: `<svg width="23" height="27" viewBox="0 0 23 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.2754 8.93164C20.9629 3.15664 15.9254 0.556641 11.5004 0.556641C11.5004 0.556641 11.5004 0.556641 11.4879 0.556641C7.07536 0.556641 2.02536 3.14414 0.712863 8.91914C-0.749637 15.3691 3.20036 20.8316 6.77536 24.2691C8.10036 25.5441 9.80036 26.1816 11.5004 26.1816C13.2004 26.1816 14.9004 25.5441 16.2129 24.2691C19.7879 20.8316 23.7379 15.3816 22.2754 8.93164ZM11.5004 15.1941C9.32536 15.1941 7.56286 13.4316 7.56286 11.2566C7.56286 9.08164 9.32536 7.31914 11.5004 7.31914C13.6754 7.31914 15.4379 9.08164 15.4379 11.2566C15.4379 13.4316 13.6754 15.1941 11.5004 15.1941Z" fill="white"/>
+</svg>
+`,
+        text: "Maynardville",
+    },
+    {
+        svg: `<svg width="23" height="27" viewBox="0 0 23 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.2754 8.93164C20.9629 3.15664 15.9254 0.556641 11.5004 0.556641C11.5004 0.556641 11.5004 0.556641 11.4879 0.556641C7.07536 0.556641 2.02536 3.14414 0.712863 8.91914C-0.749637 15.3691 3.20036 20.8316 6.77536 24.2691C8.10036 25.5441 9.80036 26.1816 11.5004 26.1816C13.2004 26.1816 14.9004 25.5441 16.2129 24.2691C19.7879 20.8316 23.7379 15.3816 22.2754 8.93164ZM11.5004 15.1941C9.32536 15.1941 7.56286 13.4316 7.56286 11.2566C7.56286 9.08164 9.32536 7.31914 11.5004 7.31914C13.6754 7.31914 15.4379 9.08164 15.4379 11.2566C15.4379 13.4316 13.6754 15.1941 11.5004 15.1941Z" fill="white"/>
+</svg>
+`,
+        text: "Knoxville",
+    },
+    {
+        svg: `<svg width="23" height="27" viewBox="0 0 23 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.2754 8.93164C20.9629 3.15664 15.9254 0.556641 11.5004 0.556641C11.5004 0.556641 11.5004 0.556641 11.4879 0.556641C7.07536 0.556641 2.02536 3.14414 0.712863 8.91914C-0.749637 15.3691 3.20036 20.8316 6.77536 24.2691C8.10036 25.5441 9.80036 26.1816 11.5004 26.1816C13.2004 26.1816 14.9004 25.5441 16.2129 24.2691C19.7879 20.8316 23.7379 15.3816 22.2754 8.93164ZM11.5004 15.1941C9.32536 15.1941 7.56286 13.4316 7.56286 11.2566C7.56286 9.08164 9.32536 7.31914 11.5004 7.31914C13.6754 7.31914 15.4379 9.08164 15.4379 11.2566C15.4379 13.4316 13.6754 15.1941 11.5004 15.1941Z" fill="white"/>
+</svg>
+`,
+        text: "Sevierville",
+    },
+    {
+        svg: `<svg width="23" height="27" viewBox="0 0 23 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.2754 8.93164C20.9629 3.15664 15.9254 0.556641 11.5004 0.556641C11.5004 0.556641 11.5004 0.556641 11.4879 0.556641C7.07536 0.556641 2.02536 3.14414 0.712863 8.91914C-0.749637 15.3691 3.20036 20.8316 6.77536 24.2691C8.10036 25.5441 9.80036 26.1816 11.5004 26.1816C13.2004 26.1816 14.9004 25.5441 16.2129 24.2691C19.7879 20.8316 23.7379 15.3816 22.2754 8.93164ZM11.5004 15.1941C9.32536 15.1941 7.56286 13.4316 7.56286 11.2566C7.56286 9.08164 9.32536 7.31914 11.5004 7.31914C13.6754 7.31914 15.4379 9.08164 15.4379 11.2566C15.4379 13.4316 13.6754 15.1941 11.5004 15.1941Z" fill="white"/>
+</svg>
+`,
+        text: "Maynardville",
+    },
+    {
+        svg: `<svg width="23" height="27" viewBox="0 0 23 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.2754 8.93164C20.9629 3.15664 15.9254 0.556641 11.5004 0.556641C11.5004 0.556641 11.5004 0.556641 11.4879 0.556641C7.07536 0.556641 2.02536 3.14414 0.712863 8.91914C-0.749637 15.3691 3.20036 20.8316 6.77536 24.2691C8.10036 25.5441 9.80036 26.1816 11.5004 26.1816C13.2004 26.1816 14.9004 25.5441 16.2129 24.2691C19.7879 20.8316 23.7379 15.3816 22.2754 8.93164ZM11.5004 15.1941C9.32536 15.1941 7.56286 13.4316 7.56286 11.2566C7.56286 9.08164 9.32536 7.31914 11.5004 7.31914C13.6754 7.31914 15.4379 9.08164 15.4379 11.2566C15.4379 13.4316 13.6754 15.1941 11.5004 15.1941Z" fill="white"/>
+</svg>
+`,
+        text: "Knoxville",
+    },
+    {
+        svg: `<svg width="23" height="27" viewBox="0 0 23 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.2754 8.93164C20.9629 3.15664 15.9254 0.556641 11.5004 0.556641C11.5004 0.556641 11.5004 0.556641 11.4879 0.556641C7.07536 0.556641 2.02536 3.14414 0.712863 8.91914C-0.749637 15.3691 3.20036 20.8316 6.77536 24.2691C8.10036 25.5441 9.80036 26.1816 11.5004 26.1816C13.2004 26.1816 14.9004 25.5441 16.2129 24.2691C19.7879 20.8316 23.7379 15.3816 22.2754 8.93164ZM11.5004 15.1941C9.32536 15.1941 7.56286 13.4316 7.56286 11.2566C7.56286 9.08164 9.32536 7.31914 11.5004 7.31914C13.6754 7.31914 15.4379 9.08164 15.4379 11.2566C15.4379 13.4316 13.6754 15.1941 11.5004 15.1941Z" fill="white"/>
+</svg>
+`,
+        text: "Sevierville",
+    },
+    {
+        svg: `<svg width="23" height="27" viewBox="0 0 23 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.2754 8.93164C20.9629 3.15664 15.9254 0.556641 11.5004 0.556641C11.5004 0.556641 11.5004 0.556641 11.4879 0.556641C7.07536 0.556641 2.02536 3.14414 0.712863 8.91914C-0.749637 15.3691 3.20036 20.8316 6.77536 24.2691C8.10036 25.5441 9.80036 26.1816 11.5004 26.1816C13.2004 26.1816 14.9004 25.5441 16.2129 24.2691C19.7879 20.8316 23.7379 15.3816 22.2754 8.93164ZM11.5004 15.1941C9.32536 15.1941 7.56286 13.4316 7.56286 11.2566C7.56286 9.08164 9.32536 7.31914 11.5004 7.31914C13.6754 7.31914 15.4379 9.08164 15.4379 11.2566C15.4379 13.4316 13.6754 15.1941 11.5004 15.1941Z" fill="white"/>
+</svg>
+`,
+        text: "Maynardville",
+    },
+    {
+        svg: `<svg width="23" height="27" viewBox="0 0 23 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.2754 8.93164C20.9629 3.15664 15.9254 0.556641 11.5004 0.556641C11.5004 0.556641 11.5004 0.556641 11.4879 0.556641C7.07536 0.556641 2.02536 3.14414 0.712863 8.91914C-0.749637 15.3691 3.20036 20.8316 6.77536 24.2691C8.10036 25.5441 9.80036 26.1816 11.5004 26.1816C13.2004 26.1816 14.9004 25.5441 16.2129 24.2691C19.7879 20.8316 23.7379 15.3816 22.2754 8.93164ZM11.5004 15.1941C9.32536 15.1941 7.56286 13.4316 7.56286 11.2566C7.56286 9.08164 9.32536 7.31914 11.5004 7.31914C13.6754 7.31914 15.4379 9.08164 15.4379 11.2566C15.4379 13.4316 13.6754 15.1941 11.5004 15.1941Z" fill="white"/>
+</svg>
+`,
+        text: "Knoxville",
+    },
+    {
+        svg: `<svg width="23" height="27" viewBox="0 0 23 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.2754 8.93164C20.9629 3.15664 15.9254 0.556641 11.5004 0.556641C11.5004 0.556641 11.5004 0.556641 11.4879 0.556641C7.07536 0.556641 2.02536 3.14414 0.712863 8.91914C-0.749637 15.3691 3.20036 20.8316 6.77536 24.2691C8.10036 25.5441 9.80036 26.1816 11.5004 26.1816C13.2004 26.1816 14.9004 25.5441 16.2129 24.2691C19.7879 20.8316 23.7379 15.3816 22.2754 8.93164ZM11.5004 15.1941C9.32536 15.1941 7.56286 13.4316 7.56286 11.2566C7.56286 9.08164 9.32536 7.31914 11.5004 7.31914C13.6754 7.31914 15.4379 9.08164 15.4379 11.2566C15.4379 13.4316 13.6754 15.1941 11.5004 15.1941Z" fill="white"/>
+</svg>
+`,
+        text: "Sevierville",
+    },
+    {
+        svg: `<svg width="23" height="27" viewBox="0 0 23 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.2754 8.93164C20.9629 3.15664 15.9254 0.556641 11.5004 0.556641C11.5004 0.556641 11.5004 0.556641 11.4879 0.556641C7.07536 0.556641 2.02536 3.14414 0.712863 8.91914C-0.749637 15.3691 3.20036 20.8316 6.77536 24.2691C8.10036 25.5441 9.80036 26.1816 11.5004 26.1816C13.2004 26.1816 14.9004 25.5441 16.2129 24.2691C19.7879 20.8316 23.7379 15.3816 22.2754 8.93164ZM11.5004 15.1941C9.32536 15.1941 7.56286 13.4316 7.56286 11.2566C7.56286 9.08164 9.32536 7.31914 11.5004 7.31914C13.6754 7.31914 15.4379 9.08164 15.4379 11.2566C15.4379 13.4316 13.6754 15.1941 11.5004 15.1941Z" fill="white"/>
+</svg>
+`,
+        text: "Maynardville",
+    },
+];
+
+const locationD = document.getElementById("location-container");
+
+locationD.innerHTML = locationData.map(card => `
+            <div class="col-sm-6 col-lg-4 mb-4 d-flex mx-auto justify-content-center">
+                <div class="location-card w-100">
+                    <div class="d-flex align-items-center gap-12">
+                       <div class="location-circle d-flex justify-content-center align-items-center">${card.svg}</div>
+                       <p class="font-family-primary fw-semibold fs-4 lh-38 text-black mb-0">${card.text}</p>
+                    </div>
+                </div>
+            </div>
+        `).join('');
+
+
+
+
+// slider
+$('.my-slider-1').slick({
+    variableWidth: true,
+    centerMode: true,
+    centerPadding: '60px',
     infinite: true,
-    speed: 300,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    pauseOnMouseEnter: true,
+    autoplaySpeed: 800,
     responsive: [
+
         {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                infinite: true,
-                dots: true
-            }
-        },
-        {
-            breakpoint: 600,
+            breakpoint: 992,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 2
             }
         },
         {
-            breakpoint: 480,
+            breakpoint: 786,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
@@ -38,84 +325,3 @@ $('.slider').slick({
         }
     ]
 });
-
-
-
-// section 2
-const cardData = [
-    {
-        image: "./assets/images/png/sec-2-img-1.png",
-        title: "Kitchen Backsplash",
-        description: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.",
-        text: "Learn more",
-        svg: "./assets/images/svg/learn-svg.svg",
-    },
-    {
-        image: "./assets/images/png/sec-2-img-2.png",
-        title: "Custom Showers",
-        description: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.",
-        text: "Learn more",
-        svg: "./assets/images/svg/learn-svg.svg",
-    },
-    {
-        image: "./assets/images/png/sec-2-img-3.png",
-        title: "Custom Flooring",
-        description: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.",
-        text: "Learn more",
-        svg: "./assets/images/svg/learn-svg.svg",
-    },
-    {
-        image: "./assets/images/png/sec-2-img-4.png",
-        title: "Large Format Tiling",
-        description: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.",
-        text: "Learn more",
-        svg: "./assets/images/svg/learn-svg.svg",
-    },
-    {
-        image: "./assets/images/png/sec-2-img-5.png",
-        title: "Wall Tiling",
-        description: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.",
-        text: "Learn more",
-        svg: "./assets/images/svg/learn-svg.svg",
-    },
-    {
-        image: "./assets/images/png/sec-2-img-6.png",
-        title: "ADA Compliant Showers",
-        description: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.",
-        text: "Learn more",
-        svg: "./assets/images/svg/learn-svg.svg",
-    },
-    {
-        image: "./assets/images/png/sec-2-img-4.png",
-        title: "Fireplace Tiling",
-        description: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.",
-        text: "Learn more",
-        svg: "./assets/images/svg/learn-svg.svg",
-    },
-]
-
-const cardContainer = document.getElementById("sec-2-cards");
-cardContainer.innerHTML = cardData.map(card => `
-    <div class="col-12 col-lg-4 col-sm-6 mb-4 d-flex justify-content-center">
-                    <div class="sec-2-card w-100 ">
-                        <img class="mb-4 w-100" src="${card.image}" alt="image">
-                        <h3 class="fw-semibold fs-3xl lh-38 text-black mb-12">${card.title}</h3>
-                        <p class="fw-normal fs-lg lh-25 text-black mb-4">${card.description}</p>
-                        <div class="d-flex align-items-center gap-10">
-                            <p class="fw-semibold fs-lg lh-25 text-red mb-0">${card.text}</p>
-                            <img src="${card.svg}" alt="svg">
-                        </div>
-                    </div>
-                </div>
-    `)
-    .join('');
-// section 3
-const cardData2 = [
-    {
-        image: "./assets/images/png/sec-2-img-1.png",
-        title: "Kitchen Backsplash",
-        description: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.",
-        text: "Learn more",
-        svg: "./assets/images/svg/learn-svg.svg",
-    },
-]

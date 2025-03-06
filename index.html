@@ -1,484 +1,493 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ceramic-solutions</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CERAMIC SOLUTION</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/root.css">
     <link rel="shortcut icon" href="./assets/images/svg/favicon.svg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
         integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
         integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 
-<body class="plus-family ">
-    <section class="header-bg min-vh-100 py-4">
-        <nav class="py-4 w-100 mb-5">
-            <div class="container mx-w-1164 nav-bg justify-content-center align-items-center d-flex">
-                <div class="d-flex align-items-center justify-content-between w-100">
-                    <a class="text-white fw-semilbold fs-5 text-decoration-none z-6" href="">
-                        <img src="./assets/images/svg/favicon.svg" alt=""></a>
+<body>
+    <!--***** header *****-->
+    <header class="d-flex justify-content-center align-items-center flex-column bg-img mb-174">
+        <nav class="py-4 w-100">
+            <div class="container max-w-1164 bg-white border-radius-24">
+                <div class="d-flex align-items-center justify-content-between w-100 py-3">
+                    <a class="z-6" href="">
+                        <img src="./assets/images/svg/nav-logo.svg" alt="nav-logo">
+                    </a>
                     <ul id="name"
                         class="d-flex mb-0 align-items-center nav-link list-unstyled justify-content-center justify-content-lg-between w-100">
                         <li>
                             <a href="#">
-                                <img class="d-none" src="" alt="nav-logo"></a>
+                                <img class="d-none" src="./assets/images/svg/nav-logo.svg" alt="nav-logo"></a>
                         </li>
                         <li>
                             <ul
-                                class="d-flex mb-0 align-items-center gap-24 list-unstyled justify-content-center flex-column flex-lg-row">
-                                <li>
-                                    <a class="text-decoration-none text-black fw-normal fs-md lh-25" href="/">Home</a>
+                                class="d-flex mb-0 align-items-center gap-28 list-unstyled justify-content-center flex-column flex-lg-row">
+                                <li><a class="text-decoration-none text-hover navbar-linkn font-family-primary fw-normal fs-6 lh-25 text-black"
+                                        href="/">Home</a>
                                 </li>
-                                <li>
-                                    <a class="text-decoration-none text-black fw-normal fs-md lh-25" href="/">About</a>
+                                <li><a class="text-decoration-none text-hover navbar-linkn font-family-primary fw-normal fs-6 lh-25 text-black"
+                                        href="/">About</a>
                                 </li>
-                                <li>
-                                    <a class="text-decoration-none text-black fw-normal fs-md lh-25"
-                                        href="/">Services</a>
-                                </li>
-                                <li>
-                                    <a class="text-decoration-none text-black fw-normal fs-md lh-25"
+                                <li><a class="text-decoration-none text-hover navbar-linkn font-family-primary fw-normal fs-6 lh-25 text-black"
+                                        href="/">Services</a></li>
+                                <li><a class="text-decoration-none text-hover navbar-linkn font-family-primary fw-normal fs-6 lh-25 text-black"
                                         href="/">Portfolio</a>
                                 </li>
-                                <li>
-                                    <a class="text-decoration-none text-black fw-normal fs-md lh-25" href="/">Contact
-                                        us</a>
+                                <li><a class="text-decoration-none text-hover navbar-linkn font-family-primary fw-normal fs-6 lh-25 text-black"
+                                        href="/">Contact us</a>
                                 </li>
-                                <li>
-                                    <a class="text-decoration-none text-black fw-normal fs-md lh-25" href="/">Request a
-                                        Qoute</a>
+                                <li><a class="text-decoration-none text-hover navbar-linkn font-family-primary fw-normal fs-6 lh-25 text-black"
+                                        href="/">Request a Qoute</a>
                                 </li>
                             </ul>
                         </li>
                         <li>
                             <ul class="d-flex list-unstyled mb-0">
                                 <li class="d-flex align-items-center justify-content-center mt-4 mt-lg-0">
-                                    <button class="nav-btn border-0 text-white">
-                                        <span>
-                                            <svg class="ml-8 nav-arrow-svg" width="25" height="25" viewBox="0 0 25 25"
-                                                fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M11.55 15.3191L9.7 17.1691C9.31 17.5591 8.69 17.5591 8.29 17.1791C8.18 17.0691 8.07 16.9691 7.96 16.8591C6.93 15.8191 6 14.7291 5.17 13.5891C4.35 12.4491 3.69 11.3091 3.21 10.1791C2.74 9.03914 2.5 7.94914 2.5 6.90914C2.5 6.22914 2.62 5.57914 2.86 4.97914C3.1 4.36914 3.48 3.80914 4.01 3.30914C4.65 2.67914 5.35 2.36914 6.09 2.36914C6.37 2.36914 6.65 2.42914 6.9 2.54914C7.16 2.66914 7.39 2.84914 7.57 3.10914L9.89 6.37914C10.07 6.62914 10.2 6.85914 10.29 7.07914C10.38 7.28914 10.43 7.49914 10.43 7.68914C10.43 7.92914 10.36 8.16914 10.22 8.39914C10.09 8.62914 9.9 8.86914 9.66 9.10914L8.9 9.89914C8.79 10.0091 8.74 10.1391 8.74 10.2991C8.74 10.3791 8.75 10.4491 8.77 10.5291C8.8 10.6091 8.83 10.6691 8.85 10.7291C9.03 11.0591 9.34 11.4891 9.78 12.0091C10.23 12.5291 10.71 13.0591 11.23 13.5891C11.33 13.6891 11.44 13.7891 11.54 13.8891C11.94 14.2791 11.95 14.9191 11.55 15.3191Z"
-                                                    fill="white" />
-                                                <path
-                                                    d="M22.4696 18.6992C22.4696 18.9792 22.4196 19.2692 22.3196 19.5492C22.2896 19.6292 22.2596 19.7092 22.2196 19.7892C22.0496 20.1492 21.8296 20.4892 21.5396 20.8092C21.0496 21.3492 20.5096 21.7392 19.8996 21.9892C19.8896 21.9892 19.8796 21.9992 19.8696 21.9992C19.2796 22.2392 18.6396 22.3692 17.9496 22.3692C16.9296 22.3692 15.8396 22.1292 14.6896 21.6392C13.5396 21.1492 12.3896 20.4892 11.2496 19.6592C10.8596 19.3692 10.4696 19.0792 10.0996 18.7692L13.3696 15.4992C13.6496 15.7092 13.8996 15.8692 14.1096 15.9792C14.1596 15.9992 14.2196 16.0292 14.2896 16.0592C14.3696 16.0892 14.4496 16.0992 14.5396 16.0992C14.7096 16.0992 14.8396 16.0392 14.9496 15.9292L15.7096 15.1792C15.9596 14.9292 16.1996 14.7392 16.4296 14.6192C16.6596 14.4792 16.8896 14.4092 17.1396 14.4092C17.3296 14.4092 17.5296 14.4492 17.7496 14.5392C17.9696 14.6292 18.1996 14.7592 18.4496 14.9292L21.7596 17.2792C22.0196 17.4592 22.1996 17.6692 22.3096 17.9192C22.4096 18.1692 22.4696 18.4192 22.4696 18.6992Z"
-                                                    fill="white" />
-                                            </svg>
-                                        </span>
-                                        (865) 621-1717
-                                    </button>
+                                    <a class="nav-btn-box text-decoration-none d-flex align-items-center gap-10 font-family-primary fs-6 lh-20 fw-bold text-black"
+                                        href="tel:865621-1717">
+                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.55 15.3191L9.7 17.1691C9.31 17.5591 8.69 17.5591 8.29 17.1791C8.18 17.0691 8.07 16.9691 7.96 16.8591C6.93 15.8191 6 14.7291 5.17 13.5891C4.35 12.4491 3.69 11.3091 3.21 10.1791C2.74 9.03914 2.5 7.94914 2.5 6.90914C2.5 6.22914 2.62 5.57914 2.86 4.97914C3.1 4.36914 3.48 3.80914 4.01 3.30914C4.65 2.67914 5.35 2.36914 6.09 2.36914C6.37 2.36914 6.65 2.42914 6.9 2.54914C7.16 2.66914 7.39 2.84914 7.57 3.10914L9.89 6.37914C10.07 6.62914 10.2 6.85914 10.29 7.07914C10.38 7.28914 10.43 7.49914 10.43 7.68914C10.43 7.92914 10.36 8.16914 10.22 8.39914C10.09 8.62914 9.9 8.86914 9.66 9.10914L8.9 9.89914C8.79 10.0091 8.74 10.1391 8.74 10.2991C8.74 10.3791 8.75 10.4491 8.77 10.5291C8.8 10.6091 8.83 10.6691 8.85 10.7291C9.03 11.0591 9.34 11.4891 9.78 12.0091C10.23 12.5291 10.71 13.0591 11.23 13.5891C11.33 13.6891 11.44 13.7891 11.54 13.8891C11.94 14.2791 11.95 14.9191 11.55 15.3191Z"
+                                                fill="red" />
+                                            <path
+                                                d="M22.4696 18.6992C22.4696 18.9792 22.4196 19.2692 22.3196 19.5492C22.2896 19.6292 22.2596 19.7092 22.2196 19.7892C22.0496 20.1492 21.8296 20.4892 21.5396 20.8092C21.0496 21.3492 20.5096 21.7392 19.8996 21.9892C19.8896 21.9892 19.8796 21.9992 19.8696 21.9992C19.2796 22.2392 18.6396 22.3692 17.9496 22.3692C16.9296 22.3692 15.8396 22.1292 14.6896 21.6392C13.5396 21.1492 12.3896 20.4892 11.2496 19.6592C10.8596 19.3692 10.4696 19.0792 10.0996 18.7692L13.3696 15.4992C13.6496 15.7092 13.8996 15.8692 14.1096 15.9792C14.1596 15.9992 14.2196 16.0292 14.2896 16.0592C14.3696 16.0892 14.4496 16.0992 14.5396 16.0992C14.7096 16.0992 14.8396 16.0392 14.9496 15.9292L15.7096 15.1792C15.9596 14.9292 16.1996 14.7392 16.4296 14.6192C16.6596 14.4792 16.8896 14.4092 17.1396 14.4092C17.3296 14.4092 17.5296 14.4492 17.7496 14.5392C17.9696 14.6292 18.1996 14.7592 18.4496 14.9292L21.7596 17.2792C22.0196 17.4592 22.1996 17.6692 22.3096 17.9192C22.4096 18.1692 22.4696 18.4192 22.4696 18.6992Z"
+                                                fill="red" />
+                                        </svg>
+                                        (865) 621-1717</a>
                                 </li>
                             </ul>
                         </li>
                     </ul>
                     <div onclick="navbarbtn()" class="z-5 d-lg-none cursor-pointer">
-                        <span class="menu-lines bg-light" id="rotates"></span>
-                        <span class="menu-lines bg-light" id="transparent"></span>
-                        <span class="menu-lines bg-light" id="rotates-2"></span>
+                        <span class="menu-lines bg-black" id="rotates"></span>
+                        <span class="menu-lines bg-black" id="transparent"></span>
+                        <span class="menu-lines bg-black" id="rotates-2"></span>
                     </div>
                 </div>
             </div>
         </nav>
-        <div class="container mx-w-1164">
-            <h1 class="fw-semibold fs-5xl lh-80 text-white mx-w-830 pb-3">Transform Your Space with Precision and
-                Quality:
-                <br>
-                Get a Free Quote Today!
-            </h1>
-            <p class="mx-w-742 text-white fw-normal fs-xl lh-28 opacity-75 pb-3">Lörem ipsum koda astrobel: sutaveligen.
-                Rodod bänera viliga. Pregigt primasofi dede facebooka: förutom
-                tivaligt. Fejkade nyheter eurosamma sol: teroktig,</p>
-            <button class="get-btn border-0 text-white fw-bold fs-xl lh-22 mb-3">Get a Quote</button>
-            <div class="mt-5 flex-wrap d-flex gap-24">
-                <div class="header-rating-box d-flex bg-white align-items-center">
-                    <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_87690_1345)">
-                            <path
-                                d="M38.9892 16.8914L22.6736 16.8906C21.9531 16.8906 21.3691 17.4745 21.3691 18.195V23.4071C21.3691 24.1274 21.9531 24.7115 22.6735 24.7115H31.8615C30.8554 27.3225 28.9776 29.5091 26.5818 30.8985L30.4995 37.6805C36.7841 34.0459 40.4995 27.6686 40.4995 20.5297C40.4995 19.5132 40.4246 18.7866 40.2748 17.9684C40.1609 17.3467 39.6212 16.8914 38.9892 16.8914Z"
-                                fill="#167EE6" />
-                            <path
-                                d="M20.5001 32.5433C16.0037 32.5433 12.0784 30.0866 9.97019 26.4512L3.18848 30.3601C6.63965 36.3415 13.1048 40.3694 20.5001 40.3694C24.128 40.3694 27.5512 39.3926 30.5001 37.6903V37.681L26.5824 30.899C24.7903 31.9384 22.7166 32.5433 20.5001 32.5433Z"
-                                fill="#12B347" />
-                            <path
-                                d="M30.5 37.6898V37.6805L26.5823 30.8984C24.7902 31.9377 22.7166 32.5427 20.5 32.5427V40.3688C24.1279 40.3688 27.5512 39.392 30.5 37.6898Z"
-                                fill="#0F993E" />
-                            <path
-                                d="M8.32609 20.3696C8.32609 18.1533 8.93093 16.0798 9.97008 14.2878L3.18836 10.3789C1.47672 13.3185 0.5 16.7324 0.5 20.3696C0.5 24.0068 1.47672 27.4207 3.18836 30.3603L9.97008 26.4514C8.93093 24.6595 8.32609 22.5859 8.32609 20.3696Z"
-                                fill="#FFD500" />
-                            <path
-                                d="M20.5001 8.19523C23.4322 8.19523 26.1255 9.23711 28.2292 10.9702C28.7482 11.3977 29.5025 11.3668 29.9778 10.8914L33.6708 7.19844C34.2102 6.65906 34.1717 5.77617 33.5956 5.27633C30.071 2.21859 25.485 0.369141 20.5001 0.369141C13.1048 0.369141 6.63965 4.39703 3.18848 10.3784L9.97019 14.2873C12.0784 10.652 16.0037 8.19523 20.5001 8.19523Z"
-                                fill="#FF4B26" />
-                            <path
-                                d="M28.2291 10.9702C28.748 11.3977 29.5024 11.3668 29.9777 10.8914L33.6707 7.19844C34.21 6.65906 34.1716 5.77617 33.5955 5.27633C30.0709 2.21852 25.4849 0.369141 20.5 0.369141V8.19524C23.432 8.19524 26.1254 9.23711 28.2291 10.9702Z"
-                                fill="#D93F21" />
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_87690_1345">
-                                <rect width="40" height="40" fill="white" transform="translate(0.5 0.369141)" />
-                            </clipPath>
-                        </defs>
-                    </svg>
-                    <div>
-                        <p class="m-0 pt-2 fw-normal fs-sm lh-19 manrope-family pb-1">Google Review</p>
-                        <div class="d-flex pb-1">
-                            <p class="justify-content-center d-flex align-items-center m-0">4.6</p>
-                            <img src="./assets/images/svg/line-star.svg" alt="line-star">
-                        </div>
-                        <p class="m-0 w-normal fs-sm lh-19 manrope-family pb-1">Based on 145 reviews</p>
-                    </div>
-                </div>
-                <div class="header-rating-box d-flex bg-white align-items-center">
-                    <svg width="54" height="55" viewBox="0 0 54 55" fill="none" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <rect y="0.702148" width="53.3333" height="53.3333" fill="url(#pattern0_87690_1375)" />
-                        <defs>
-                            <pattern id="pattern0_87690_1375" patternContentUnits="objectBoundingBox" width="1"
-                                height="1">
-                                <use xlink:href="#image0_87690_1375" transform="scale(0.00390625)" />
-                            </pattern>
-                            <image id="image0_87690_1375" width="256" height="256" preserveAspectRatio="none"
-                                xlink:href="data:image/png;base64,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" />
-                        </defs>
-                    </svg>
-                    <div>
-                        <p class="m-0 pt-2 fw-normal fs-sm lh-19 manrope-family pb-1">Google Review</p>
-                        <div class="d-flex pb-1">
-                            <p class="justify-content-center d-flex align-items-center m-0">4.6</p>
-                            <img src="./assets/images/svg/line-star.svg" alt="line-star">
-                        </div>
-                        <p class="m-0 w-normal fs-sm lh-19 manrope-family pb-1">Based on 145 reviews</p>
-                    </div>
-                </div>
-                <img src="./assets/images/png/installer-circle.png" alt="installer-circle">
-                <img src="./assets/images/png/award-circle.png" alt="installer-circle">
-            </div>
-        </div>
-    </section>
-    <!--section-2-->
-    <section class="py-140">
-        <div class="container mx-w-1164">
-            <h2 class="fw-semibold fs-4xl lh-70 text-center mb-56">What we do</h2>
-            <div class="row" id="sec-2-cards"></div>
-        </div>
-    </section>
-    <!--section-3-->
-    <section class="py-100 bg-red">
-        <div class="container mx-w-1164">
-            <div class="row">
-                <div class="col-12 col-lg-7">
-                    <h2 class="fw-semibold fs-4xl lh-70">Why Choose us?</h2>
-                    <p class="fw-normal fs-xl lh-28 mx-w-590">Lörem ipsum koda astrobel: sutaveligen. Rodod bänera
-                        viliga. Pregigt primasofi dede facebooka:
-                        förutom tivaligt. </p>
-                    <div class="d-flex gap-20">
-                        <div class="icon-box justify-content-center align-items-center d-flex">
-                            <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path opacity="0.15"
-                                    d="M16.5 23.0358L8.5 27.0358L10.5 19.0358L4.5 12.3691L13.1667 11.7025L16.5 4.36914L19.8333 11.7025L28.5 12.3691L22.5 19.0358L24.5 27.0358L16.5 23.0358Z"
-                                    fill="#FF0000" />
-                                <path
-                                    d="M16.5 23.0358L8.5 27.0358L10.5 19.0358L4.5 12.3691L13.1667 11.7025L16.5 4.36914L19.8333 11.7025L28.5 12.3691L22.5 19.0358L24.5 27.0358L16.5 23.0358Z"
-                                    stroke="#FF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </div>
+        <div class="container max-w-1164">
+            <h1 class="font-family-primary text-white fw-semibold fs-xl lh-80 max-w-830 mb-20 mt-5">Transform Your Space
+                with Precision and Quality:<br class="d-none d-lg-block">Get a Free Quote Today!</h1>
+            <p class="font-family-primary fs-md lh-28 fw-normal text-white max-w-742 mb-36">Lörem ipsum koda astrobel:
+                sutaveligen. Rodod bänera viliga. Pregigt primasofi dede facebooka: förutom tivaligt. Fejkade
+                nyheter eurosamma sol: teroktig,</p>
+            <button class="get-btn border-0 font-family-primary fw-bold fs-md lh-22 text-white bg-red mb-72">Get a
+                Quote</button>
+            <div class="d-flex gap-4 flex-wrap mb-4">
+                <div class="box box-common-class">
+                    <div class="d-flex gap-10 align-items-center">
+                        <a href="https://www.google.co.in/" target="_blank">
+                            <img src="./assets/images/svg/google-img.svg" alt="google-img">
+                        </a>
                         <div>
-                            <p class="fw-semibold fs-2xl lh-32 m-0 pb-2">High Quality Materials</p>
-                            <p class="fw-normal fs-lg lh-25 mx-w-370 m-0">Es ist ein lang erwiesener Fakt, dass ein
-                                Leser vom Text abgelenkt wird.</p>
+                            <h3 class="font-family-second fw-normal lh-19 fs-sm mb-0 sooty-black">Google Review</h3>
+                            <div class="d-flex align-items-center">
+                                <h4 class="font-family-second fw-normal fs-5 lh-32 mb-0 sooty-black">4.6</h4>
+                                <svg width="84" height="18" viewBox="0 0 84 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.03981 3.30835C8.28927 2.54059 9.37544 2.54059 9.6249 3.30835L10.5162 6.05151C10.6278 6.39487 10.9477 6.62733 11.3088 6.62733H14.1931C15.0004 6.62733 15.336 7.66035 14.6829 8.13485L12.3494 9.83022C12.0574 10.0424 11.9351 10.4186 12.0467 10.7619L12.938 13.5051C13.1875 14.2728 12.3087 14.9113 11.6556 14.4368L9.32218 12.7414C9.0301 12.5292 8.63461 12.5292 8.34253 12.7414L6.00906 14.4368C5.35597 14.9113 4.47723 14.2728 4.72669 13.5051L5.618 10.7619C5.72956 10.4186 5.60735 10.0424 5.31527 9.83022L2.9818 8.13485C2.3287 7.66035 2.66435 6.62733 3.47162 6.62733H6.35595C6.71697 6.62733 7.03694 6.39487 7.1485 6.05151L8.03981 3.30835Z"
+                                        fill="#FCB547" />
+                                    <path
+                                        d="M24.7068 3.30835C24.9563 2.54059 26.0424 2.54059 26.2919 3.30835L27.1832 6.05151C27.2948 6.39487 27.6147 6.62733 27.9757 6.62733H30.8601C31.6674 6.62733 32.003 7.66035 31.3499 8.13485L29.0164 9.83022C28.7244 10.0424 28.6021 10.4186 28.7137 10.7619L29.605 13.5051C29.8545 14.2728 28.9757 14.9113 28.3226 14.4368L25.9892 12.7414C25.6971 12.5292 25.3016 12.5292 25.0095 12.7414L22.6761 14.4368C22.023 14.9113 21.1442 14.2728 21.3937 13.5051L22.285 10.7619C22.3966 10.4186 22.2743 10.0424 21.9823 9.83022L19.6488 8.13485C18.9957 7.66035 19.3313 6.62733 20.1386 6.62733H23.0229C23.384 6.62733 23.7039 6.39487 23.8155 6.05151L24.7068 3.30835Z"
+                                        fill="#FCB547" />
+                                    <path
+                                        d="M41.3728 3.30835C41.6223 2.54059 42.7084 2.54059 42.9579 3.30835L43.8492 6.05151C43.9608 6.39487 44.2807 6.62733 44.6418 6.62733H47.5261C48.3334 6.62733 48.669 7.66035 48.0159 8.13485L45.6824 9.83022C45.3904 10.0424 45.2682 10.4186 45.3797 10.7619L46.271 13.5051C46.5205 14.2728 45.6418 14.9113 44.9887 14.4368L42.6552 12.7414C42.3631 12.5292 41.9676 12.5292 41.6755 12.7414L39.3421 14.4368C38.689 14.9113 37.8102 14.2728 38.0597 13.5051L38.951 10.7619C39.0626 10.4186 38.9404 10.0424 38.6483 9.83022L36.3148 8.13485C35.6617 7.66035 35.9974 6.62733 36.8046 6.62733H39.689C40.05 6.62733 40.3699 6.39487 40.4815 6.05151L41.3728 3.30835Z"
+                                        fill="#FCB547" />
+                                    <path
+                                        d="M58.0398 3.30835C58.2893 2.54059 59.3754 2.54059 59.6249 3.30835L60.5162 6.05151C60.6278 6.39487 60.9477 6.62733 61.3088 6.62733H64.1931C65.0004 6.62733 65.336 7.66035 64.6829 8.13485L62.3494 9.83022C62.0574 10.0424 61.9351 10.4186 62.0467 10.7619L62.938 13.5051C63.1875 14.2728 62.3087 14.9113 61.6556 14.4368L59.3222 12.7414C59.0301 12.5292 58.6346 12.5292 58.3425 12.7414L56.0091 14.4368C55.356 14.9113 54.4772 14.2728 54.7267 13.5051L55.618 10.7619C55.7296 10.4186 55.6073 10.0424 55.3153 9.83022L52.9818 8.13485C52.3287 7.66035 52.6644 6.62733 53.4716 6.62733H56.356C56.717 6.62733 57.0369 6.39487 57.1485 6.05151L58.0398 3.30835Z"
+                                        fill="#FCB547" />
+                                    <path
+                                        d="M74.7058 3.30835C74.9553 2.54059 76.0415 2.54059 76.2909 3.30835L77.1822 6.05151C77.2938 6.39487 77.6138 6.62733 77.9748 6.62733H80.8591C81.6664 6.62733 82.002 7.66035 81.3489 8.13485L79.0155 9.83022C78.7234 10.0424 78.6012 10.4186 78.7127 10.7619L79.604 13.5051C79.8535 14.2728 78.9748 14.9113 78.3217 14.4368L75.9882 12.7414C75.6961 12.5292 75.3006 12.5292 75.0085 12.7414L72.6751 14.4368C72.022 14.9113 71.1432 14.2728 71.3927 13.5051L72.284 10.7619C72.3956 10.4186 72.2734 10.0424 71.9813 9.83022L69.6478 8.13485C68.9947 7.66035 69.3304 6.62733 70.1376 6.62733H73.022C73.383 6.62733 73.703 6.39487 73.8145 6.05151L74.7058 3.30835Z"
+                                        fill="#FCB547" />
+                                </svg>
+                            </div>
+                            <p class="font-family-second fw-normal fs-sm lh-19 mb-0 sooty-black">Based on 145 reviews
+                            </p>
                         </div>
                     </div>
-                    <div class="d-flex gap-20 mt-24">
-                        <div class="icon-box justify-content-center align-items-center d-flex">
-                            <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path opacity="0.15" fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M11.167 13.7028V27.0361H23.6475C24.9187 27.0361 26.0131 26.1389 26.2624 24.8924L27.8624 16.8924C28.1924 15.2423 26.9303 13.7028 25.2475 13.7028H19.167L22.4013 8.85126C23.4242 7.31689 22.6183 5.23227 20.8293 4.78502L20.7659 4.76916C19.786 4.52419 18.7518 4.85387 18.0944 5.62077L11.167 13.7028Z"
-                                    fill="#FF0000" />
-                                <path
-                                    d="M11.1663 13.7028V27.0361M11.1663 13.7028L5.83301 13.7028V27.0361L11.1663 27.0361M11.1663 13.7028L18.0938 5.62077C18.7511 4.85387 19.7853 4.52419 20.7652 4.76916L20.8286 4.78502C22.6177 5.23227 23.4236 7.31689 22.4007 8.85126L19.1663 13.7028H25.2469C26.9297 13.7028 28.1918 15.2423 27.8617 16.8924L26.2617 24.8924C26.0125 26.1389 24.918 27.0361 23.6469 27.0361L11.1663 27.0361"
-                                    stroke="#FF0000" stroke-width="2.0625" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </div>
+                </div>
+                <div class="box-2 box-common-class">
+                    <div class="d-flex gap-10 align-items-center">
+                        <a href="https://www.trustpilot.com/" target="_blank">
+                            <img src="./assets/images/svg/trust-pilot-img.svg" alt="trust-pilot-img">
+                        </a>
                         <div>
-                            <p class="fw-semibold fs-2xl lh-32 m-0 pb-2">Durability with Warranty</p>
-                            <p class="fw-normal fs-lg lh-25 mx-w-370 m-0">Es ist ein lang erwiesener Fakt, dass ein
-                                Leser vom Text abgelenkt wird.</p>
-                        </div>
-                    </div>
-                    <div class="d-flex gap-20 mt-24">
-                        <div class="icon-box justify-content-center align-items-center d-flex">
-                            <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path opacity="0.15"
-                                    d="M28.4992 22.338V25.9511C28.5048 27.3322 27.2629 28.4855 25.8685 28.3597C13.8333 28.3691 4.5 18.9491 4.50942 6.99472C4.38383 5.60774 5.53143 4.37055 6.91081 4.36926H10.531C11.1166 4.3635 11.6844 4.57048 12.1284 4.9516C13.3908 6.03513 14.2028 9.71284 13.8904 11.1748C13.6465 12.3163 12.4959 13.1149 11.7136 13.8956C13.4314 16.9107 15.9329 19.4072 18.954 21.1216C19.7362 20.3409 20.5364 19.1926 21.6801 18.9491C23.1473 18.6368 26.8486 19.45 27.9278 20.7212C28.3105 21.172 28.5139 21.7474 28.4992 22.338Z"
-                                    fill="#FF0000" />
-                                <path
-                                    d="M19.8333 9.03581C20.8162 9.22757 21.7919 9.66104 22.5 10.3691C23.2081 11.0772 23.6416 12.0529 23.8333 13.0358M20.5 4.36914C22.542 4.59599 24.3796 5.5839 25.8333 7.03581C27.2871 8.48771 28.2706 10.3274 28.5 12.3691M28.4992 22.338V25.9511C28.5048 27.3322 27.2629 28.4855 25.8685 28.3597C13.8333 28.3691 4.5 18.9491 4.50942 6.99472C4.38383 5.60774 5.53143 4.37055 6.91081 4.36926H10.531C11.1166 4.3635 11.6844 4.57048 12.1284 4.9516C13.3908 6.03513 14.2028 9.71284 13.8904 11.1748C13.6465 12.3163 12.4959 13.1149 11.7136 13.8956C13.4314 16.9107 15.9329 19.4072 18.954 21.1216C19.7362 20.3409 20.5364 19.1926 21.6801 18.9491C23.1473 18.6368 26.8486 19.45 27.9278 20.7212C28.3105 21.172 28.5139 21.7474 28.4992 22.338Z"
-                                    stroke="#FF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </div>
-                        <div>
-                            <p class="fw-semibold fs-2xl lh-32 m-0 pb-2">24/7 Support</p>
-                            <p class="fw-normal fs-lg lh-25 mx-w-370 m-0">Es ist ein lang erwiesener Fakt, dass ein
-                                Leser vom Text abgelenkt wird.</p>
-                        </div>
-                    </div>
-                    <button class="get-btn border-0 text-white fw-bold fs-xl lh-22 mt-36">Get a Quote</button>
-                </div>
-                <div class="col-12 col-lg-5 justify-content-end d-flex">
-                    <img src="./assets/images/png/section-3-main-img.png" alt="section-3-main-img">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--section-4-->
-    <section class="pt-140">
-        <div class="container mx-w-1164">
-            <h2 class="fw-semibold fs-4xl lh-70 text-center m-0 pb-3">What Our Customers Say</h2>
-            <p class="fw-normal fs-xl lh-28 mx-w-641 text-center mx-auto mb-32">Lörem ipsum koda astrobel: sutaveligen.
-                Rodod
-                bänera viliga. Pregigt primasofi dede facebooka: förutom
-                tivaligt. Fejkade</p>
-            <div class="d-flex gap-24 justify-content-center align-items-center ">
-                <div class="header-rating-box d-flex bg-white align-items-center">
-                    <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_87690_1345)">
-                            <path
-                                d="M38.9892 16.8914L22.6736 16.8906C21.9531 16.8906 21.3691 17.4745 21.3691 18.195V23.4071C21.3691 24.1274 21.9531 24.7115 22.6735 24.7115H31.8615C30.8554 27.3225 28.9776 29.5091 26.5818 30.8985L30.4995 37.6805C36.7841 34.0459 40.4995 27.6686 40.4995 20.5297C40.4995 19.5132 40.4246 18.7866 40.2748 17.9684C40.1609 17.3467 39.6212 16.8914 38.9892 16.8914Z"
-                                fill="#167EE6" />
-                            <path
-                                d="M20.5001 32.5433C16.0037 32.5433 12.0784 30.0866 9.97019 26.4512L3.18848 30.3601C6.63965 36.3415 13.1048 40.3694 20.5001 40.3694C24.128 40.3694 27.5512 39.3926 30.5001 37.6903V37.681L26.5824 30.899C24.7903 31.9384 22.7166 32.5433 20.5001 32.5433Z"
-                                fill="#12B347" />
-                            <path
-                                d="M30.5 37.6898V37.6805L26.5823 30.8984C24.7902 31.9377 22.7166 32.5427 20.5 32.5427V40.3688C24.1279 40.3688 27.5512 39.392 30.5 37.6898Z"
-                                fill="#0F993E" />
-                            <path
-                                d="M8.32609 20.3696C8.32609 18.1533 8.93093 16.0798 9.97008 14.2878L3.18836 10.3789C1.47672 13.3185 0.5 16.7324 0.5 20.3696C0.5 24.0068 1.47672 27.4207 3.18836 30.3603L9.97008 26.4514C8.93093 24.6595 8.32609 22.5859 8.32609 20.3696Z"
-                                fill="#FFD500" />
-                            <path
-                                d="M20.5001 8.19523C23.4322 8.19523 26.1255 9.23711 28.2292 10.9702C28.7482 11.3977 29.5025 11.3668 29.9778 10.8914L33.6708 7.19844C34.2102 6.65906 34.1717 5.77617 33.5956 5.27633C30.071 2.21859 25.485 0.369141 20.5001 0.369141C13.1048 0.369141 6.63965 4.39703 3.18848 10.3784L9.97019 14.2873C12.0784 10.652 16.0037 8.19523 20.5001 8.19523Z"
-                                fill="#FF4B26" />
-                            <path
-                                d="M28.2291 10.9702C28.748 11.3977 29.5024 11.3668 29.9777 10.8914L33.6707 7.19844C34.21 6.65906 34.1716 5.77617 33.5955 5.27633C30.0709 2.21852 25.4849 0.369141 20.5 0.369141V8.19524C23.432 8.19524 26.1254 9.23711 28.2291 10.9702Z"
-                                fill="#D93F21" />
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_87690_1345">
-                                <rect width="40" height="40" fill="white" transform="translate(0.5 0.369141)" />
-                            </clipPath>
-                        </defs>
-                    </svg>
-                    <div>
-                        <p class="m-0 pt-2 fw-normal fs-sm lh-19 manrope-family pb-1">Google Review</p>
-                        <div class="d-flex pb-1">
-                            <p class="justify-content-center d-flex align-items-center m-0">4.6</p>
-                            <img src="./assets/images/svg/line-star.svg" alt="line-star">
-                        </div>
-                        <p class="m-0 w-normal fs-sm lh-19 manrope-family pb-1">Based on 145 reviews</p>
-                    </div>
-                </div>
-                <div class="header-rating-box d-flex bg-white align-items-center">
-                    <svg width="54" height="55" viewBox="0 0 54 55" fill="none" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <rect y="0.702148" width="53.3333" height="53.3333" fill="url(#pattern0_87690_1375)" />
-                        <defs>
-                            <pattern id="pattern0_87690_1375" patternContentUnits="objectBoundingBox" width="1"
-                                height="1">
-                                <use xlink:href="#image0_87690_1375" transform="scale(0.00390625)" />
-                            </pattern>
-                            <image id="image0_87690_1375" width="256" height="256" preserveAspectRatio="none"
-                                xlink:href="data:image/png;base64,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" />
-                        </defs>
-                    </svg>
-                    <div>
-                        <p class="m-0 pt-2 fw-normal fs-sm lh-19 manrope-family pb-1">Google Review</p>
-                        <div class="d-flex pb-1">
-                            <p class="justify-content-center d-flex align-items-center m-0">4.6</p>
-                            <img src="./assets/images/svg/line-star.svg" alt="line-star">
-                        </div>
-                        <p class="m-0 w-normal fs-sm lh-19 manrope-family pb-1">Based on 145 reviews</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="slider overflow-hidden">
-            <div class="slider-box mt-56">
-                <div class="d-flex gap-2">
-                    <img src="./assets/images/png/slider-profile-mark-t.png" alt="slider-profile-mark-t">
-                    <div>
-                        <p class="m-0 fw-bold fs-lg lh-25 manrope-family">Mark T.</p>
-                        <p class="m-0 fw-normal fs-md lh-22 manrope-family">Fitness enthusiast</p>
-                    </div>
-                </div>
-                <img class="pt-3 pb-3" src="./assets/images/png/slider-line-star.png" alt="slider-line-star">
-                <p class="mx-w-316 fw-normal fs-lg lh-25 m-0">"As a fitness enthusiast, I was skeptical about
-                    resistance
-                    bands at first. But after trying
-                    these, I'm a believer. The quality is top-notch, and they've become an integral part of my
-                    workout routine. I can't believe how versatile they are.”</p>
-            </div>
-            <div class="slider-box mt-56">
-                <div class="d-flex gap-2">
-                    <img src="./assets/images/png/slider-profile-mark-t-2.png" alt="slider-profile-mark-t">
-                    <div>
-                        <p class="m-0 fw-bold fs-lg lh-25 manrope-family">Mark T.</p>
-                        <p class="m-0 fw-normal fs-md lh-22 manrope-family">Fitness enthusiast</p>
-                    </div>
-                </div>
-                <img class="pt-3 pb-3" src="./assets/images/png/slider-line-star.png" alt="slider-line-star">
-                <p class="mx-w-316 fw-normal fs-lg lh-25 m-0">"As a fitness enthusiast, I was skeptical about
-                    resistance
-                    bands at first. But after trying
-                    these, I'm a believer. The quality is top-notch, and they've become an integral part of my
-                    workout routine. I can't believe how versatile they are.”</p>
-            </div>
-            <div class="slider-box mt-56">
-                <div class="d-flex gap-2">
-                    <img src="./assets/images/png/slider-profile-mark-t-3.png" alt="slider-profile-mark-t">
-                    <div>
-                        <p class="m-0 fw-bold fs-lg lh-25 manrope-family">Mark T.</p>
-                        <p class="m-0 fw-normal fs-md lh-22 manrope-family">Fitness enthusiast</p>
-                    </div>
-                </div>
-                <img class="pt-3 pb-3" src="./assets/images/png/slider-line-star.png" alt="slider-line-star">
-                <p class="mx-w-316 fw-normal fs-lg lh-25 m-0">"As a fitness enthusiast, I was skeptical about
-                    resistance
-                    bands at first. But after trying
-                    these, I'm a believer. The quality is top-notch, and they've become an integral part of my
-                    workout routine. I can't believe how versatile they are.”</p>
-            </div>
-            <div class="slider-box mt-56">
-                <div class="d-flex gap-2">
-                    <img src="./assets/images/png/slider-profile-mark-t-4.png" alt="slider-profile-mark-t">
-                    <div>
-                        <p class="m-0 fw-bold fs-lg lh-25 manrope-family">Mark T.</p>
-                        <p class="m-0 fw-normal fs-md lh-22 manrope-family">Fitness enthusiast</p>
-                    </div>
-                </div>
-                <img class="pt-3 pb-3" src="./assets/images/png/slider-line-star.png" alt="slider-line-star">
-                <p class="mx-w-316 fw-normal fs-lg lh-25 m-0">"As a fitness enthusiast, I was skeptical about
-                    resistance
-                    bands at first. But after trying
-                    these, I'm a believer. The quality is top-notch, and they've become an integral part of my
-                    workout routine. I can't believe how versatile they are.”</p>
-            </div>
-            <div class="slider-box mt-56">
-                <div class="d-flex gap-2">
-                    <img src="./assets/images/png/slider-profile-mark-t.png" alt="slider-profile-mark-t">
-                    <div>
-                        <p class="m-0 fw-bold fs-lg lh-25 manrope-family">Mark T.</p>
-                        <p class="m-0 fw-normal fs-md lh-22 manrope-family">Fitness enthusiast</p>
-                    </div>
-                </div>
-                <img class="pt-3 pb-3" src="./assets/images/png/slider-line-star.png" alt="slider-line-star">
-                <p class="mx-w-316 fw-normal fs-lg lh-25 m-0">"As a fitness enthusiast, I was skeptical about
-                    resistance
-                    bands at first. But after trying
-                    these, I'm a believer. The quality is top-notch, and they've become an integral part of my
-                    workout routine. I can't believe how versatile they are.”</p>
-            </div>
-        </div>
-    </section>
-    <!--section-5-->
-    <section class="py-140">
-        <div class="container mx-w-1164">
-            <div class="row">
-                <div class="col-5">
-                    <img src="./assets/images/png/section-5-main-img.png" alt="section-5-main-img">
-                </div>
-                <div class="col-7">
-                    <div class="ml-63">
-                        <h2 class="fw-semibold fs-4xl lh-70 m-0 pb-3">How it works?</h2>
-                        <p class="fw-normal fs-xl lh-28 mx-w-592 m-0 mb-3">Lörem ipsum koda astrobel: sutaveligen. Rodod
-                            bänera
-                            viliga. Pregigt primasofi dede facebooka:
-                            förutom tivaligt. </p>
-                        <div class="d-flex sec-5-box mb-3">
-                            <svg class="mr-20" width="33" height="33" viewBox="0 0 33 33" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M29.2462 14.6889L27.4329 12.5822C27.0862 12.1822 26.8062 11.4356 26.8062 10.9022V8.63556C26.8062 7.22223 25.6462 6.06223 24.2328 6.06223H21.9662C21.4462 6.06223 20.6862 5.78223 20.2862 5.43556L18.1795 3.62223C17.2595 2.83556 15.7529 2.83556 14.8195 3.62223L12.7262 5.44889C12.3262 5.78223 11.5662 6.06223 11.0462 6.06223H8.73952C7.32618 6.06223 6.16618 7.22223 6.16618 8.63556V10.9156C6.16618 11.4356 5.88618 12.1822 5.55285 12.5822L3.75285 14.7022C2.97952 15.6222 2.97952 17.1156 3.75285 18.0356L5.55285 20.1556C5.88618 20.5556 6.16618 21.3022 6.16618 21.8222V24.1022C6.16618 25.5156 7.32618 26.6756 8.73952 26.6756H11.0462C11.5662 26.6756 12.3262 26.9556 12.7262 27.3022L14.8329 29.1156C15.7529 29.9022 17.2595 29.9022 18.1929 29.1156L20.2995 27.3022C20.6995 26.9556 21.4462 26.6756 21.9795 26.6756H24.2462C25.6595 26.6756 26.8195 25.5156 26.8195 24.1022V21.8356C26.8195 21.3156 27.0995 20.5556 27.4462 20.1556L29.2595 18.0489C30.0329 17.1289 30.0329 15.6089 29.2462 14.6889ZM22.0462 13.8489L15.6062 20.2889C15.4195 20.4756 15.1662 20.5822 14.8995 20.5822C14.6329 20.5822 14.3795 20.4756 14.1929 20.2889L10.9662 17.0622C10.5795 16.6756 10.5795 16.0356 10.9662 15.6489C11.3529 15.2622 11.9929 15.2622 12.3795 15.6489L14.8995 18.1689L20.6329 12.4356C21.0195 12.0489 21.6595 12.0489 22.0462 12.4356C22.4328 12.8222 22.4328 13.4622 22.0462 13.8489Z"
-                                    fill="#FF0000" />
-                            </svg>
-                            <div>
-                                <p class="m-0 fw-semibold fs-2xl lh-32 pb-2">Contact us</p>
-                                <p class="m-0 fw-normal fs-lg lh-25 mx-w-508">Lörem ipsum deligen vuprer diar faktigt på
-                                    dehädiska att sara. Persion. Repp löng
-                                    blippbetalning. Megaliga fadat om än dening</p>
+                            <h3 class="font-family-second fw-normal lh-19 fs-sm mb-0 sooty-black">Trust Pilot Review
+                            </h3>
+                            <div class="d-flex align-items-center">
+                                <h4 class="font-family-second fw-normal fs-5 lh-32 mb-0 sooty-black">4.6</h4>
+                                <svg width="84" height="18" viewBox="0 0 84 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.03981 3.30835C8.28927 2.54059 9.37544 2.54059 9.6249 3.30835L10.5162 6.05151C10.6278 6.39487 10.9477 6.62733 11.3088 6.62733H14.1931C15.0004 6.62733 15.336 7.66035 14.6829 8.13485L12.3494 9.83022C12.0574 10.0424 11.9351 10.4186 12.0467 10.7619L12.938 13.5051C13.1875 14.2728 12.3087 14.9113 11.6556 14.4368L9.32218 12.7414C9.0301 12.5292 8.63461 12.5292 8.34253 12.7414L6.00906 14.4368C5.35597 14.9113 4.47723 14.2728 4.72669 13.5051L5.618 10.7619C5.72956 10.4186 5.60735 10.0424 5.31527 9.83022L2.9818 8.13485C2.3287 7.66035 2.66435 6.62733 3.47162 6.62733H6.35595C6.71697 6.62733 7.03694 6.39487 7.1485 6.05151L8.03981 3.30835Z"
+                                        fill="#FCB547" />
+                                    <path
+                                        d="M24.7068 3.30835C24.9563 2.54059 26.0424 2.54059 26.2919 3.30835L27.1832 6.05151C27.2948 6.39487 27.6147 6.62733 27.9757 6.62733H30.8601C31.6674 6.62733 32.003 7.66035 31.3499 8.13485L29.0164 9.83022C28.7244 10.0424 28.6021 10.4186 28.7137 10.7619L29.605 13.5051C29.8545 14.2728 28.9757 14.9113 28.3226 14.4368L25.9892 12.7414C25.6971 12.5292 25.3016 12.5292 25.0095 12.7414L22.6761 14.4368C22.023 14.9113 21.1442 14.2728 21.3937 13.5051L22.285 10.7619C22.3966 10.4186 22.2743 10.0424 21.9823 9.83022L19.6488 8.13485C18.9957 7.66035 19.3313 6.62733 20.1386 6.62733H23.0229C23.384 6.62733 23.7039 6.39487 23.8155 6.05151L24.7068 3.30835Z"
+                                        fill="#FCB547" />
+                                    <path
+                                        d="M41.3728 3.30835C41.6223 2.54059 42.7084 2.54059 42.9579 3.30835L43.8492 6.05151C43.9608 6.39487 44.2807 6.62733 44.6418 6.62733H47.5261C48.3334 6.62733 48.669 7.66035 48.0159 8.13485L45.6824 9.83022C45.3904 10.0424 45.2682 10.4186 45.3797 10.7619L46.271 13.5051C46.5205 14.2728 45.6418 14.9113 44.9887 14.4368L42.6552 12.7414C42.3631 12.5292 41.9676 12.5292 41.6755 12.7414L39.3421 14.4368C38.689 14.9113 37.8102 14.2728 38.0597 13.5051L38.951 10.7619C39.0626 10.4186 38.9404 10.0424 38.6483 9.83022L36.3148 8.13485C35.6617 7.66035 35.9974 6.62733 36.8046 6.62733H39.689C40.05 6.62733 40.3699 6.39487 40.4815 6.05151L41.3728 3.30835Z"
+                                        fill="#FCB547" />
+                                    <path
+                                        d="M58.0398 3.30835C58.2893 2.54059 59.3754 2.54059 59.6249 3.30835L60.5162 6.05151C60.6278 6.39487 60.9477 6.62733 61.3088 6.62733H64.1931C65.0004 6.62733 65.336 7.66035 64.6829 8.13485L62.3494 9.83022C62.0574 10.0424 61.9351 10.4186 62.0467 10.7619L62.938 13.5051C63.1875 14.2728 62.3087 14.9113 61.6556 14.4368L59.3222 12.7414C59.0301 12.5292 58.6346 12.5292 58.3425 12.7414L56.0091 14.4368C55.356 14.9113 54.4772 14.2728 54.7267 13.5051L55.618 10.7619C55.7296 10.4186 55.6073 10.0424 55.3153 9.83022L52.9818 8.13485C52.3287 7.66035 52.6644 6.62733 53.4716 6.62733H56.356C56.717 6.62733 57.0369 6.39487 57.1485 6.05151L58.0398 3.30835Z"
+                                        fill="#FCB547" />
+                                    <path
+                                        d="M74.7058 3.30835C74.9553 2.54059 76.0415 2.54059 76.2909 3.30835L77.1822 6.05151C77.2938 6.39487 77.6138 6.62733 77.9748 6.62733H80.8591C81.6664 6.62733 82.002 7.66035 81.3489 8.13485L79.0155 9.83022C78.7234 10.0424 78.6012 10.4186 78.7127 10.7619L79.604 13.5051C79.8535 14.2728 78.9748 14.9113 78.3217 14.4368L75.9882 12.7414C75.6961 12.5292 75.3006 12.5292 75.0085 12.7414L72.6751 14.4368C72.022 14.9113 71.1432 14.2728 71.3927 13.5051L72.284 10.7619C72.3956 10.4186 72.2734 10.0424 71.9813 9.83022L69.6478 8.13485C68.9947 7.66035 69.3304 6.62733 70.1376 6.62733H73.022C73.383 6.62733 73.703 6.39487 73.8145 6.05151L74.7058 3.30835Z"
+                                        fill="#FCB547" />
+                                </svg>
                             </div>
-                        </div>
-                        <div class="d-flex sec-5-box mb-3">
-                            <svg class="mr-20" width="33" height="33" viewBox="0 0 33 33" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M29.2462 14.6889L27.4329 12.5822C27.0862 12.1822 26.8062 11.4356 26.8062 10.9022V8.63556C26.8062 7.22223 25.6462 6.06223 24.2328 6.06223H21.9662C21.4462 6.06223 20.6862 5.78223 20.2862 5.43556L18.1795 3.62223C17.2595 2.83556 15.7529 2.83556 14.8195 3.62223L12.7262 5.44889C12.3262 5.78223 11.5662 6.06223 11.0462 6.06223H8.73952C7.32618 6.06223 6.16618 7.22223 6.16618 8.63556V10.9156C6.16618 11.4356 5.88618 12.1822 5.55285 12.5822L3.75285 14.7022C2.97952 15.6222 2.97952 17.1156 3.75285 18.0356L5.55285 20.1556C5.88618 20.5556 6.16618 21.3022 6.16618 21.8222V24.1022C6.16618 25.5156 7.32618 26.6756 8.73952 26.6756H11.0462C11.5662 26.6756 12.3262 26.9556 12.7262 27.3022L14.8329 29.1156C15.7529 29.9022 17.2595 29.9022 18.1929 29.1156L20.2995 27.3022C20.6995 26.9556 21.4462 26.6756 21.9795 26.6756H24.2462C25.6595 26.6756 26.8195 25.5156 26.8195 24.1022V21.8356C26.8195 21.3156 27.0995 20.5556 27.4462 20.1556L29.2595 18.0489C30.0329 17.1289 30.0329 15.6089 29.2462 14.6889ZM22.0462 13.8489L15.6062 20.2889C15.4195 20.4756 15.1662 20.5822 14.8995 20.5822C14.6329 20.5822 14.3795 20.4756 14.1929 20.2889L10.9662 17.0622C10.5795 16.6756 10.5795 16.0356 10.9662 15.6489C11.3529 15.2622 11.9929 15.2622 12.3795 15.6489L14.8995 18.1689L20.6329 12.4356C21.0195 12.0489 21.6595 12.0489 22.0462 12.4356C22.4328 12.8222 22.4328 13.4622 22.0462 13.8489Z"
-                                    fill="#FF0000" />
-                            </svg>
-                            <div>
-                                <p class="m-0 fw-semibold fs-2xl lh-32 pb-2">Get a Qoute</p>
-                                <p class="m-0 fw-normal fs-lg lh-25 mx-w-508">Lörem ipsum deligen vuprer diar faktigt på
-                                    dehädiska att sara. Persion. Repp löng
-                                    blippbetalning. Megaliga fadat om än dening</p>
-                            </div>
-                        </div>
-                        <div class="d-flex sec-5-box mb-3">
-                            <svg class="mr-20" width="33" height="33" viewBox="0 0 33 33" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M29.2462 14.6889L27.4329 12.5822C27.0862 12.1822 26.8062 11.4356 26.8062 10.9022V8.63556C26.8062 7.22223 25.6462 6.06223 24.2328 6.06223H21.9662C21.4462 6.06223 20.6862 5.78223 20.2862 5.43556L18.1795 3.62223C17.2595 2.83556 15.7529 2.83556 14.8195 3.62223L12.7262 5.44889C12.3262 5.78223 11.5662 6.06223 11.0462 6.06223H8.73952C7.32618 6.06223 6.16618 7.22223 6.16618 8.63556V10.9156C6.16618 11.4356 5.88618 12.1822 5.55285 12.5822L3.75285 14.7022C2.97952 15.6222 2.97952 17.1156 3.75285 18.0356L5.55285 20.1556C5.88618 20.5556 6.16618 21.3022 6.16618 21.8222V24.1022C6.16618 25.5156 7.32618 26.6756 8.73952 26.6756H11.0462C11.5662 26.6756 12.3262 26.9556 12.7262 27.3022L14.8329 29.1156C15.7529 29.9022 17.2595 29.9022 18.1929 29.1156L20.2995 27.3022C20.6995 26.9556 21.4462 26.6756 21.9795 26.6756H24.2462C25.6595 26.6756 26.8195 25.5156 26.8195 24.1022V21.8356C26.8195 21.3156 27.0995 20.5556 27.4462 20.1556L29.2595 18.0489C30.0329 17.1289 30.0329 15.6089 29.2462 14.6889ZM22.0462 13.8489L15.6062 20.2889C15.4195 20.4756 15.1662 20.5822 14.8995 20.5822C14.6329 20.5822 14.3795 20.4756 14.1929 20.2889L10.9662 17.0622C10.5795 16.6756 10.5795 16.0356 10.9662 15.6489C11.3529 15.2622 11.9929 15.2622 12.3795 15.6489L14.8995 18.1689L20.6329 12.4356C21.0195 12.0489 21.6595 12.0489 22.0462 12.4356C22.4328 12.8222 22.4328 13.4622 22.0462 13.8489Z"
-                                    fill="#FF0000" />
-                            </svg>
-                            <div>
-                                <p class="m-0 fw-semibold fs-2xl lh-32 pb-2">Get your Work Done</p>
-                                <p class="m-0 fw-normal fs-lg lh-25 mx-w-508">Lörem ipsum deligen vuprer diar faktigt på
-                                    dehädiska att sara. Persion. Repp löng
-                                    blippbetalning. Megaliga fadat om än dening</p>
-                            </div>
-                        </div>
-                        <div class="d-flex gap-24">
-                            <button class="get-btn border-0 text-white fw-bold fs-xl lh-22 mt-36">Get a Quote</button>
-                            <button class="view-btn fw-bold fs-xl lh-22 mt-36">View Tile Visualizer</button>
+                            <p class="font-family-second fw-normal fs-sm lh-19 mb-0 sooty-black">Based on 145 reviews
+                            </p>
                         </div>
                     </div>
                 </div>
+                <img src="./assets/images/svg/tile-logo.svg" alt="tile-logo">
+                <img src="./assets/images/svg/business-award-img.svg" alt="business-award-img">
             </div>
         </div>
-    </section>
-    <!--section-6-->
+    </header>
+    <!--***** What we do *****-->
     <section class="d-flex justify-content-center align-items-center pb-140">
-        <div class="container mx-w-1140">
+        <div class="container max-w-1164">
+            <h2 class="font-family-primary fw-semibold fs-lg lh-70 text-center text-black mb-56">What We Do</h2>
+            <div class="row" id="cardsContainer"></div>
+        </div>
+    </section>
+    <!--***** Why Choose us *****-->
+    <section class="d-flex justify-content-center align-items-center py-100 bg-light-red mb-140">
+        <div class="container max-w-1164">
+            <div class="row">
+                <div class="col-lg-7 col-12 mb-5 mb-lg-0 d-flex justify-content-center">
+                    <div>
+                        <h2
+                            class="font-family-primary fw-semibold fs-lg lh-70 text-black mb-20 text-center text-lg-start">
+                            Why Choose Us?</h2>
+                        <p
+                            class="font-family-primary fw-normal fs-md lh-28 text-black mb-32 max-w-590 text-lg-start text-center">
+                            Lörem ipsum koda astrobel:
+                            sutaveligen. Rodod bänera viliga. Pregigt primasofi dede facebooka: förutom tivaligt.</p>
+                        <div class="d-flex gap-20 mb-4 justify-content-center justify-content-lg-start">
+                            <div class="circle-box d-flex justify-content-center align-items-center">
+                                <svg width="27" height="26" viewBox="0 0 27 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13.5 20.0358L5.5 24.0358L7.5 16.0358L1.5 9.36914L10.1667 8.70247L13.5 1.36914L16.8333 8.70247L25.5 9.36914L19.5 16.0358L21.5 24.0358L13.5 20.0358Z"
+                                        stroke="#FF0000" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-family-primary fw-semibold fs-5 lh-32 color-Vantablack mb-12">High
+                                    Quality
+                                    Materials</h3>
+                                <p class="font-family-primary fw-normal fs-6 lh-25 text-black max-w-370 mb-0">Es ist ein
+                                    lang erwiesener Fakt, dass ein Leser vom Text abgelenkt wird.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-20 mb-4 justify-content-center justify-content-lg-start">
+                            <div class="circle-box d-flex justify-content-center align-items-center">
+                                <svg width="25" height="26" viewBox="0 0 25 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.16634 10.7028V24.0361M7.16634 10.7028L1.83301 10.7028V24.0361L7.16634 24.0361M7.16634 10.7028L14.0938 2.62077C14.7511 1.85387 15.7853 1.52419 16.7652 1.76916L16.8286 1.78502C18.6177 2.23227 19.4236 4.31689 18.4007 5.85126L15.1663 10.7028H21.2469C22.9297 10.7028 24.1918 12.2423 23.8617 13.8924L22.2617 21.8924C22.0125 23.1389 20.918 24.0361 19.6469 24.0361L7.16634 24.0361"
+                                        stroke="#FF0000" stroke-width="2.0625" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-family-primary fw-semibold fs-5 lh-32 color-Vantablack mb-12">Durability
+                                    with Warranty</h3>
+                                <p class="font-family-primary fw-normal fs-6 lh-25 text-black max-w-370 mb-0">Es ist ein
+                                    lang erwiesener Fakt, dass ein Leser vom Text abgelenkt wird.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-20 mb-36 justify-content-center justify-content-lg-start">
+                            <div class="circle-box d-flex justify-content-center align-items-center">
+                                <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.8333 6.03581C17.8162 6.22757 18.7919 6.66104 19.5 7.36914C20.2081 8.07724 20.6416 9.05293 20.8333 10.0358M17.5 1.36914C19.542 1.59599 21.3796 2.5839 22.8333 4.03581C24.2871 5.48771 25.2706 7.32739 25.5 9.36914M25.4992 19.338V22.9511C25.5048 24.3322 24.2629 25.4855 22.8685 25.3597C10.8333 25.3691 1.5 15.9491 1.50942 3.99472C1.38383 2.60774 2.53143 1.37055 3.91081 1.36926H7.531C8.11663 1.3635 8.68438 1.57048 9.12842 1.9516C10.3908 3.03513 11.2028 6.71284 10.8904 8.17485C10.6465 9.31629 9.49587 10.1149 8.71359 10.8956C10.4314 13.9107 12.9329 16.4072 15.954 18.1216C16.7362 17.3409 17.5364 16.1926 18.6801 15.9491C20.1473 15.6368 23.8486 16.45 24.9278 17.7212C25.3105 18.172 25.5139 18.7474 25.4992 19.338Z"
+                                        stroke="#FF0000" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-family-primary fw-semibold fs-5 lh-32 color-Vantablack mb-12">24/7
+                                    Support
+                                </h3>
+                                <p class="font-family-primary fw-normal fs-6 lh-25 text-black max-w-370 mb-0">Es ist ein
+                                    lang erwiesener Fakt, dass ein Leser vom Text abgelenkt wird.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center justify-content-lg-start">
+                            <button
+                                class="get-btn border-0 font-family-primary fw-bold fs-md lh-22 text-white bg-red">Get a
+                                Quote</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-12 d-flex justify-content-center">
+                    <img src="./assets/images/png/section-3-img.png" alt="section-3-img" class="w-100 max-w-549">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--***** What Our Customers Say *****-->
+    <section class="d-flex justify-content-center align-items-center pb-140 flex-column overflow-hidden">
+        <div class="container max-w-1164 mb-56">
+            <h2 class="font-family-primary fw-semibold fs-lg lh-70 text-center text-black mb-20">What Our Customers Say
+            </h2>
+            <div class="d-flex justify-content-center mb-32">
+                <p class="font-family-primary fw-normal fs-md lh-28 text-center text-black max-w-641 mb-0">Lörem ipsum
+                    koda astrobel:
+                    sutaveligen. Rodod bänera viliga. Pregigt primasofi dede facebooka: förutom
+                    tivaligt. Fejkade</p>
+            </div>
+            <div class="d-flex justify-content-center gap-4 flex-wrap">
+                <div class="box box-common-class">
+                    <div class="d-flex gap-10 align-items-center">
+                        <a href="https://www.google.co.in/" target="_blank"> <img
+                                src="./assets/images/svg/google-img.svg" alt="google-img"></a>
+                        <div>
+                            <h3 class="font-family-second fw-normal lh-19 fs-sm mb-0 sooty-black">Google Review</h3>
+                            <div class="d-flex align-items-center">
+                                <h4 class="font-family-second fw-normal fs-5 lh-32 mb-0 sooty-black">4.6</h4>
+                                <svg width="84" height="18" viewBox="0 0 84 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.03981 3.30835C8.28927 2.54059 9.37544 2.54059 9.6249 3.30835L10.5162 6.05151C10.6278 6.39487 10.9477 6.62733 11.3088 6.62733H14.1931C15.0004 6.62733 15.336 7.66035 14.6829 8.13485L12.3494 9.83022C12.0574 10.0424 11.9351 10.4186 12.0467 10.7619L12.938 13.5051C13.1875 14.2728 12.3087 14.9113 11.6556 14.4368L9.32218 12.7414C9.0301 12.5292 8.63461 12.5292 8.34253 12.7414L6.00906 14.4368C5.35597 14.9113 4.47723 14.2728 4.72669 13.5051L5.618 10.7619C5.72956 10.4186 5.60735 10.0424 5.31527 9.83022L2.9818 8.13485C2.3287 7.66035 2.66435 6.62733 3.47162 6.62733H6.35595C6.71697 6.62733 7.03694 6.39487 7.1485 6.05151L8.03981 3.30835Z"
+                                        fill="#FCB547" />
+                                    <path
+                                        d="M24.7068 3.30835C24.9563 2.54059 26.0424 2.54059 26.2919 3.30835L27.1832 6.05151C27.2948 6.39487 27.6147 6.62733 27.9757 6.62733H30.8601C31.6674 6.62733 32.003 7.66035 31.3499 8.13485L29.0164 9.83022C28.7244 10.0424 28.6021 10.4186 28.7137 10.7619L29.605 13.5051C29.8545 14.2728 28.9757 14.9113 28.3226 14.4368L25.9892 12.7414C25.6971 12.5292 25.3016 12.5292 25.0095 12.7414L22.6761 14.4368C22.023 14.9113 21.1442 14.2728 21.3937 13.5051L22.285 10.7619C22.3966 10.4186 22.2743 10.0424 21.9823 9.83022L19.6488 8.13485C18.9957 7.66035 19.3313 6.62733 20.1386 6.62733H23.0229C23.384 6.62733 23.7039 6.39487 23.8155 6.05151L24.7068 3.30835Z"
+                                        fill="#FCB547" />
+                                    <path
+                                        d="M41.3728 3.30835C41.6223 2.54059 42.7084 2.54059 42.9579 3.30835L43.8492 6.05151C43.9608 6.39487 44.2807 6.62733 44.6418 6.62733H47.5261C48.3334 6.62733 48.669 7.66035 48.0159 8.13485L45.6824 9.83022C45.3904 10.0424 45.2682 10.4186 45.3797 10.7619L46.271 13.5051C46.5205 14.2728 45.6418 14.9113 44.9887 14.4368L42.6552 12.7414C42.3631 12.5292 41.9676 12.5292 41.6755 12.7414L39.3421 14.4368C38.689 14.9113 37.8102 14.2728 38.0597 13.5051L38.951 10.7619C39.0626 10.4186 38.9404 10.0424 38.6483 9.83022L36.3148 8.13485C35.6617 7.66035 35.9974 6.62733 36.8046 6.62733H39.689C40.05 6.62733 40.3699 6.39487 40.4815 6.05151L41.3728 3.30835Z"
+                                        fill="#FCB547" />
+                                    <path
+                                        d="M58.0398 3.30835C58.2893 2.54059 59.3754 2.54059 59.6249 3.30835L60.5162 6.05151C60.6278 6.39487 60.9477 6.62733 61.3088 6.62733H64.1931C65.0004 6.62733 65.336 7.66035 64.6829 8.13485L62.3494 9.83022C62.0574 10.0424 61.9351 10.4186 62.0467 10.7619L62.938 13.5051C63.1875 14.2728 62.3087 14.9113 61.6556 14.4368L59.3222 12.7414C59.0301 12.5292 58.6346 12.5292 58.3425 12.7414L56.0091 14.4368C55.356 14.9113 54.4772 14.2728 54.7267 13.5051L55.618 10.7619C55.7296 10.4186 55.6073 10.0424 55.3153 9.83022L52.9818 8.13485C52.3287 7.66035 52.6644 6.62733 53.4716 6.62733H56.356C56.717 6.62733 57.0369 6.39487 57.1485 6.05151L58.0398 3.30835Z"
+                                        fill="#FCB547" />
+                                    <path
+                                        d="M74.7058 3.30835C74.9553 2.54059 76.0415 2.54059 76.2909 3.30835L77.1822 6.05151C77.2938 6.39487 77.6138 6.62733 77.9748 6.62733H80.8591C81.6664 6.62733 82.002 7.66035 81.3489 8.13485L79.0155 9.83022C78.7234 10.0424 78.6012 10.4186 78.7127 10.7619L79.604 13.5051C79.8535 14.2728 78.9748 14.9113 78.3217 14.4368L75.9882 12.7414C75.6961 12.5292 75.3006 12.5292 75.0085 12.7414L72.6751 14.4368C72.022 14.9113 71.1432 14.2728 71.3927 13.5051L72.284 10.7619C72.3956 10.4186 72.2734 10.0424 71.9813 9.83022L69.6478 8.13485C68.9947 7.66035 69.3304 6.62733 70.1376 6.62733H73.022C73.383 6.62733 73.703 6.39487 73.8145 6.05151L74.7058 3.30835Z"
+                                        fill="#FCB547" />
+                                </svg>
+                            </div>
+                            <p class="font-family-second fw-normal fs-sm lh-19 mb-0 sooty-black">Based on 145 reviews
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-2 box-common-class">
+                    <div class="d-flex gap-10 align-items-center">
+                        <a href="https://www.trustpilot.com/" target="_blank"> <img
+                                src="./assets/images/svg/trust-pilot-img.svg" alt="trust-pilot-img">
+                        </a>
+                        <div>
+                            <h3 class="font-family-second fw-normal lh-19 fs-sm mb-0 sooty-black">Trust Pilot Review
+                            </h3>
+                            <div class="d-flex align-items-center">
+                                <h4 class="font-family-second fw-normal fs-5 lh-32 mb-0 sooty-black">4.6</h4>
+                                <svg width="84" height="18" viewBox="0 0 84 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.03981 3.30835C8.28927 2.54059 9.37544 2.54059 9.6249 3.30835L10.5162 6.05151C10.6278 6.39487 10.9477 6.62733 11.3088 6.62733H14.1931C15.0004 6.62733 15.336 7.66035 14.6829 8.13485L12.3494 9.83022C12.0574 10.0424 11.9351 10.4186 12.0467 10.7619L12.938 13.5051C13.1875 14.2728 12.3087 14.9113 11.6556 14.4368L9.32218 12.7414C9.0301 12.5292 8.63461 12.5292 8.34253 12.7414L6.00906 14.4368C5.35597 14.9113 4.47723 14.2728 4.72669 13.5051L5.618 10.7619C5.72956 10.4186 5.60735 10.0424 5.31527 9.83022L2.9818 8.13485C2.3287 7.66035 2.66435 6.62733 3.47162 6.62733H6.35595C6.71697 6.62733 7.03694 6.39487 7.1485 6.05151L8.03981 3.30835Z"
+                                        fill="#FCB547" />
+                                    <path
+                                        d="M24.7068 3.30835C24.9563 2.54059 26.0424 2.54059 26.2919 3.30835L27.1832 6.05151C27.2948 6.39487 27.6147 6.62733 27.9757 6.62733H30.8601C31.6674 6.62733 32.003 7.66035 31.3499 8.13485L29.0164 9.83022C28.7244 10.0424 28.6021 10.4186 28.7137 10.7619L29.605 13.5051C29.8545 14.2728 28.9757 14.9113 28.3226 14.4368L25.9892 12.7414C25.6971 12.5292 25.3016 12.5292 25.0095 12.7414L22.6761 14.4368C22.023 14.9113 21.1442 14.2728 21.3937 13.5051L22.285 10.7619C22.3966 10.4186 22.2743 10.0424 21.9823 9.83022L19.6488 8.13485C18.9957 7.66035 19.3313 6.62733 20.1386 6.62733H23.0229C23.384 6.62733 23.7039 6.39487 23.8155 6.05151L24.7068 3.30835Z"
+                                        fill="#FCB547" />
+                                    <path
+                                        d="M41.3728 3.30835C41.6223 2.54059 42.7084 2.54059 42.9579 3.30835L43.8492 6.05151C43.9608 6.39487 44.2807 6.62733 44.6418 6.62733H47.5261C48.3334 6.62733 48.669 7.66035 48.0159 8.13485L45.6824 9.83022C45.3904 10.0424 45.2682 10.4186 45.3797 10.7619L46.271 13.5051C46.5205 14.2728 45.6418 14.9113 44.9887 14.4368L42.6552 12.7414C42.3631 12.5292 41.9676 12.5292 41.6755 12.7414L39.3421 14.4368C38.689 14.9113 37.8102 14.2728 38.0597 13.5051L38.951 10.7619C39.0626 10.4186 38.9404 10.0424 38.6483 9.83022L36.3148 8.13485C35.6617 7.66035 35.9974 6.62733 36.8046 6.62733H39.689C40.05 6.62733 40.3699 6.39487 40.4815 6.05151L41.3728 3.30835Z"
+                                        fill="#FCB547" />
+                                    <path
+                                        d="M58.0398 3.30835C58.2893 2.54059 59.3754 2.54059 59.6249 3.30835L60.5162 6.05151C60.6278 6.39487 60.9477 6.62733 61.3088 6.62733H64.1931C65.0004 6.62733 65.336 7.66035 64.6829 8.13485L62.3494 9.83022C62.0574 10.0424 61.9351 10.4186 62.0467 10.7619L62.938 13.5051C63.1875 14.2728 62.3087 14.9113 61.6556 14.4368L59.3222 12.7414C59.0301 12.5292 58.6346 12.5292 58.3425 12.7414L56.0091 14.4368C55.356 14.9113 54.4772 14.2728 54.7267 13.5051L55.618 10.7619C55.7296 10.4186 55.6073 10.0424 55.3153 9.83022L52.9818 8.13485C52.3287 7.66035 52.6644 6.62733 53.4716 6.62733H56.356C56.717 6.62733 57.0369 6.39487 57.1485 6.05151L58.0398 3.30835Z"
+                                        fill="#FCB547" />
+                                    <path
+                                        d="M74.7058 3.30835C74.9553 2.54059 76.0415 2.54059 76.2909 3.30835L77.1822 6.05151C77.2938 6.39487 77.6138 6.62733 77.9748 6.62733H80.8591C81.6664 6.62733 82.002 7.66035 81.3489 8.13485L79.0155 9.83022C78.7234 10.0424 78.6012 10.4186 78.7127 10.7619L79.604 13.5051C79.8535 14.2728 78.9748 14.9113 78.3217 14.4368L75.9882 12.7414C75.6961 12.5292 75.3006 12.5292 75.0085 12.7414L72.6751 14.4368C72.022 14.9113 71.1432 14.2728 71.3927 13.5051L72.284 10.7619C72.3956 10.4186 72.2734 10.0424 71.9813 9.83022L69.6478 8.13485C68.9947 7.66035 69.3304 6.62733 70.1376 6.62733H73.022C73.383 6.62733 73.703 6.39487 73.8145 6.05151L74.7058 3.30835Z"
+                                        fill="#FCB547" />
+                                </svg>
+                            </div>
+                            <p class="font-family-second fw-normal fs-sm lh-19 mb-0 sooty-black">Based on 145 reviews
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="my-slider-1 w-100">
+            <div class="slider-card cursor-pointer">
+                <div class="d-flex gap-8 align-items-center mb-3">
+                    <img src="./assets/images/svg/slider-img-1.svg" alt="slider-img-1">
+                    <div>
+                        <h3 class="font-family-second fw-semibold fs-6 lh-25 text-black mb-0">Mark T.</h3>
+                        <h4 class="font-family-second fw-normal fs-base lh-22 text-black mb-0">Fitness enthusiast</h4>
+                    </div>
+                </div>
+                <img src="./assets/images/svg/slider-star-img.svg" alt="star-img" class="mb-3">
+                <p class="font-family-second fw-normal fs-6 lh-25 text-black mb-0">"As a fitness enthusiast, I was
+                    skeptical about resistance bands at first. But after trying these, I'm a believer. The quality is
+                    top-notch, and they've become an integral part of my workout routine. I can't believe how versatile
+                    they are.”</p>
+            </div>
+            <div class="slider-card cursor-pointer">
+                <div class="d-flex gap-8 align-items-center mb-3">
+                    <img src="./assets/images/svg/slider-img-2.svg" alt="slider-img-1">
+                    <div>
+                        <h3 class="font-family-second fw-semibold fs-6 lh-25 text-black mb-0">Mark T.</h3>
+                        <h4 class="font-family-second fw-normal fs-base lh-22 text-black mb-0">Fitness enthusiast</h4>
+                    </div>
+                </div>
+                <img src="./assets/images/svg/slider-star-img.svg" alt="star-img" class="mb-3">
+                <p class="font-family-second fw-normal fs-6 lh-25 text-black mb-0">"As a fitness enthusiast, I was
+                    skeptical about resistance bands at first. But after trying these, I'm a believer. The quality is
+                    top-notch, and they've become an integral part of my workout routine. I can't believe how versatile
+                    they are.”</p>
+            </div>
+            <div class="slider-card cursor-pointer">
+                <div class="d-flex gap-8 align-items-center mb-3">
+                    <img src="./assets/images/svg/slider-img-3.svg" alt="slider-img-1">
+                    <div>
+                        <h3 class="font-family-second fw-semibold fs-6 lh-25 text-black mb-0">Mark T.</h3>
+                        <h4 class="font-family-second fw-normal fs-base lh-22 text-black mb-0">Fitness enthusiast</h4>
+                    </div>
+                </div>
+                <img src="./assets/images/svg/slider-star-img.svg" alt="star-img" class="mb-3">
+                <p class="font-family-second fw-normal fs-6 lh-25 text-black mb-0">"As a fitness enthusiast, I was
+                    skeptical about resistance bands at first. But after trying these, I'm a believer. The quality is
+                    top-notch, and they've become an integral part of my workout routine. I can't believe how versatile
+                    they are.”</p>
+            </div>
+            <div class="slider-card cursor-pointer">
+                <div class="d-flex gap-8 align-items-center mb-3">
+                    <img src="./assets/images/svg/slider-img-4.svg" alt="slider-img-1">
+                    <div>
+                        <h3 class="font-family-second fw-semibold fs-6 lh-25 text-black mb-0">Mark T.</h3>
+                        <h4 class="font-family-second fw-normal fs-base lh-22 text-black mb-0">Fitness enthusiast</h4>
+                    </div>
+                </div>
+                <img src="./assets/images/svg/slider-star-img.svg" alt="star-img" class="mb-3">
+                <p class="font-family-second fw-normal fs-6 lh-25 text-black mb-0">"As a fitness enthusiast, I was
+                    skeptical about resistance bands at first. But after trying these, I'm a believer. The quality is
+                    top-notch, and they've become an integral part of my workout routine. I can't believe how versatile
+                    they are.”</p>
+            </div>
+        </div>
+    </section>
+    <!--***** How it works *****-->
+    <section class="d-flex justify-content-center align-items-center pb-140">
+        <div class="container max-w-1164">
+            <div class="row flex-column-reverse flex-lg-row">
+                <div class="col-lg-5 col-12 d-flex justify-content-center">
+                    <img src="./assets/images/png/section-5-img.png" alt="section-5-img" class="w-100 max-w-485">
+                </div>
+                <div class="col-lg-7 col-12 mb-5 mb-lg-0 pl-51">
+                    <h2 class="font-family-primary fw-semibold fs-lg lh-70 text-black text-center text-lg-start mb-20">
+                        How it works?</h2>
+                    <div class="d-flex justify-content-center justify-content-lg-start">
+                        <p
+                            class="font-family-primary fw-normal fs-md lh-28 text-black text-center max-w-592 text-lg-start mb-32">
+                            Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga. Pregigt primasofi dede
+                            facebooka: förutom tivaligt.</p>
+                    </div>
+                    <div class="d-flex justify-content-center justify-content-lg-start">
+                        <div>
+                            <div class="section-5-card mb-3">
+                                <div class="d-flex align-items-center gap-20 mb-12">
+                                    <img src="./assets/images/svg/section-5-logo.svg" alt="logo">
+                                    <h3 class="font-family-primary fw-semibold fs-5 lh-32 color-Vantablack mb-0">Contact
+                                        us
+                                    </h3>
+                                </div>
+                                <p class="font-family-primary pl-52 fs-6 lh-25 fw-normal text-black mb-0">Lörem ipsum
+                                    deligen vuprer diar faktigt på dehädiska att sara. Persion. Repp löng
+                                    blippbetalning. Megaliga fadat om än dening</p>
+                            </div>
+                            <div class="section-5-card mb-3">
+                                <div class="d-flex align-items-center gap-20 mb-12">
+                                    <img src="./assets/images/svg/section-5-logo.svg" alt="logo">
+                                    <h3 class="font-family-primary fw-semibold fs-5 lh-32 color-Vantablack mb-0">Get a
+                                        Qoute
+                                    </h3>
+                                </div>
+                                <p class="font-family-primary pl-52 fs-6 lh-25 fw-normal text-black mb-0">Lörem ipsum
+                                    deligen vuprer diar faktigt på dehädiska att sara. Persion. Repp löng
+                                    blippbetalning. Megaliga fadat om än dening</p>
+                            </div>
+                            <div class="section-5-card mb-36">
+                                <div class="d-flex align-items-center gap-20 mb-12">
+                                    <img src="./assets/images/svg/section-5-logo.svg" alt="logo">
+                                    <h3 class="font-family-primary fw-semibold fs-5 lh-32 color-Vantablack mb-0">Get
+                                        your Work Done</h3>
+                                </div>
+                                <p class="font-family-primary pl-52 fs-6 lh-25 fw-normal text-black mb-0">Lörem ipsum
+                                    deligen vuprer diar faktigt på dehädiska att sara. Persion. Repp löng
+                                    blippbetalning. Megaliga fadat om än dening</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start gap-4">
+                        <button class="get-btn font-family-primary fw-bold fs-md lh-22 bg-red text-white border-0">Get
+                            a Quote</button>
+                        <button class="view-btn font-family-primary bg-white fw-bold fs-md lh-22 color-red">View Tile
+                            Visualizer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--***** Interested *****-->
+    <section class="d-flex justify-content-center align-items-center pb-140">
+        <div class="container max-w-1164">
             <div class="red-box position-relative w-100">
                 <div class="red-overlay w-100 h-100 top-0 position-absolute"></div>
                 <div class="d-flex justify-content-center z-2 position-relative">
                     <div>
-                        <h2 class="fs-4xl lh-70 text-white fw-semibold text-center mb-20">
+                        <h2 class="font-family-primary fs-lg lh-70 text-white fw-semibold text-center mb-20">
                             Interested?<br>Get in touch with us
                         </h2>
-                        <p class="fw-normal fs-xl lh-28 text-center text-white mb-36 mx-w-592">
+                        <p class="font-family-primary fw-normal fs-md lh-28 text-center text-white mb-36 max-w-592">
                             Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga. Pregigt primasofi dede
                             facebooka: förutom tivaligt.
                         </p>
                         <div class="d-flex justify-content-center">
-                            <button class="get-btn border-0 text-red fw-bold fs-xl lh-22 bg-white ">Get a Quote</button>
+                            <button
+                                class="get-btn font-family-primary fw-bold bg-white fs-md lh-22 border-0 color-red">Get
+                                a Quote</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--section-7-->
+    <!--***** Our Blog *****-->
+    <section class="d-flex justify-content-center align-items-center pb-140">
+        <div class="container max-w-1164">
+            <h2 class="font-family-primary fw-semibold fs-lg lh-70 text-center text-black mb-20">Our Blog</h2>
+            <div class="d-flex justify-content-center">
+                <p class="font-family-primary fw-normal fs-md lh-28 text-center color-Vantablack max-w-592 mb-56">Lörem
+                    ipsum koda astrobel: sutaveligen. Rodod bänera viliga. Pregigt primasofi dede facebooka: förutom
+                    tivaligt. Fejkade</p>
+            </div>
+            <div class="row" id="blog-container"></div>
+        </div>
+    </section>
+    <!--***** Frequently Asked Questions *****-->
     <section class="faq d-flex justify-content-center align-items-center pb-140">
         <div class="container max-w-1164">
             <h2 class="font-family-primary fw-semibold fs-lg lh-70 text-black mb-20 text-center">Frequently Asked
@@ -578,7 +587,169 @@
             </div>
         </div>
     </section>
-    <!--section-8-->
+    <!--***** We provide services in these areas *****-->
+    <section class="d-flex justify-content-center align-items-center pb-120">
+        <div class="container max-w-1164">
+            <div class="d-flex justify-content-center justify-content-lg-start">
+                <h2
+                    class="font-family-primary fw-semibold fs-lg lh-70 text-black max-w-589 mb-20 text-center text-lg-start">
+                    We provide services in
+                    these areas</h2>
+            </div>
+            <div class="d-flex justify-content-center justify-content-lg-start">
+                <p
+                    class="font-family-primary fw-normal text-center text-lg-start fs-md lh-28 text-black max-w-592 mb-56">
+                    Lörem ipsum koda
+                    astrobel: sutaveligen. Rodod bänera viliga. Pregigt primasofi dede facebooka: förutom tivaligt.
+                    Fejkade</p>
+            </div>
+            <div class="row" id="location-container"></div>
+            <div class="row">
+                <div class="col-sm-6 col-12 mb-4 mx-auto d-flex justify-content-lg-end justify-content-center">
+                    <div class="location-card w-100">
+                        <div class="d-flex align-items-center gap-12">
+                            <div class="location-circle d-flex justify-content-center align-items-center">
+                                <svg width="23" height="27" viewBox="0 0 23 27" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M22.2754 8.93164C20.9629 3.15664 15.9254 0.556641 11.5004 0.556641C11.5004 0.556641 11.5004 0.556641 11.4879 0.556641C7.07536 0.556641 2.02536 3.14414 0.712863 8.91914C-0.749637 15.3691 3.20036 20.8316 6.77536 24.2691C8.10036 25.5441 9.80036 26.1816 11.5004 26.1816C13.2004 26.1816 14.9004 25.5441 16.2129 24.2691C19.7879 20.8316 23.7379 15.3816 22.2754 8.93164ZM11.5004 15.1941C9.32536 15.1941 7.56286 13.4316 7.56286 11.2566C7.56286 9.08164 9.32536 7.31914 11.5004 7.31914C13.6754 7.31914 15.4379 9.08164 15.4379 11.2566C15.4379 13.4316 13.6754 15.1941 11.5004 15.1941Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                            <p class="font-family-primary fw-semibold fs-4 lh-38 text-black mb-0">Knoxville</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-12 mb-4 mx-auto d-flex justify-content-lg-start justify-content-center">
+                    <div class="location-card w-100">
+                        <div class="d-flex align-items-center gap-12">
+                            <div class="location-circle d-flex justify-content-center align-items-center">
+                                <svg width="23" height="27" viewBox="0 0 23 27" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M22.2754 8.93164C20.9629 3.15664 15.9254 0.556641 11.5004 0.556641C11.5004 0.556641 11.5004 0.556641 11.4879 0.556641C7.07536 0.556641 2.02536 3.14414 0.712863 8.91914C-0.749637 15.3691 3.20036 20.8316 6.77536 24.2691C8.10036 25.5441 9.80036 26.1816 11.5004 26.1816C13.2004 26.1816 14.9004 25.5441 16.2129 24.2691C19.7879 20.8316 23.7379 15.3816 22.2754 8.93164ZM11.5004 15.1941C9.32536 15.1941 7.56286 13.4316 7.56286 11.2566C7.56286 9.08164 9.32536 7.31914 11.5004 7.31914C13.6754 7.31914 15.4379 9.08164 15.4379 11.2566C15.4379 13.4316 13.6754 15.1941 11.5004 15.1941Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                            <p class="font-family-primary fw-semibold fs-4 lh-38 text-black mb-0">Sevierville</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--***** footer *****-->
+    <footer>
+        <div class="container max-w-1164 mb-4">
+            <div class="row">
+                <div class="col-lg-2 col-sm-4 mb-4">
+                    <img src="./assets/images/svg/footer-logo.svg" alt="logo" class="mb-20">
+                    <a class="d-flex text-decoration-none gap-8 align-items-center mb-3" href="mailto:Help@Dealzip.com">
+                        <img src="./assets/images/svg/message-img.svg" alt="message-img">
+                        <p class="font-family-primary fw-normal fs-6 lh-25 washed-black mb-0">Help@Dealzip.com</p>
+                    </a>
+                    <a class="d-flex text-decoration-none gap-8 align-items-center mb-4" href="tel:+123445667889">
+                        <img src="./assets/images/svg/mobile-img.svg" alt="mobile-img">
+                        <p class="font-family-primary fw-normal fs-6 lh-25 washed-black mb-0">+1 234 456 678 89</p>
+                    </a>
+                    <div class="d-flex gap-8">
+                        <a class="footer-link-circle bg-red d-flex justify-content-center align-items-center" href="">
+                            <svg width="11" height="21" viewBox="0 0 11 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7 11.5215H9.5L10.5 7.52148H7V5.52148C7 4.49148 7 3.52148 9 3.52148H10.5V0.161484C10.174 0.118484 8.943 0.0214844 7.643 0.0214844C4.928 0.0214844 3 1.67848 3 4.72148V7.52148H0V11.5215H3V20.0215H7V11.5215Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                        <a class="footer-link-circle bg-red d-flex justify-content-center align-items-center" href="">
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.5276 0.369141C12.6526 0.372141 13.2236 0.378141 13.7166 0.392141L13.9106 0.399141C14.1346 0.407141 14.3556 0.417141 14.6226 0.429141C15.6866 0.479141 16.4126 0.647141 17.0496 0.894141C17.7096 1.14814 18.2656 1.49214 18.8216 2.04714C19.3301 2.54704 19.7236 3.15173 19.9746 3.81914C20.2216 4.45614 20.3896 5.18214 20.4396 6.24714C20.4516 6.51314 20.4616 6.73414 20.4696 6.95914L20.4756 7.15314C20.4906 7.64514 20.4966 8.21614 20.4986 9.34114L20.4996 10.0871V11.3971C20.5021 12.1265 20.4944 12.8559 20.4766 13.5851L20.4706 13.7791C20.4626 14.0041 20.4526 14.2251 20.4406 14.4911C20.3906 15.5561 20.2206 16.2811 19.9746 16.9191C19.7243 17.5869 19.3307 18.1918 18.8216 18.6911C18.3216 19.1995 17.7169 19.5929 17.0496 19.8441C16.4126 20.0911 15.6866 20.2591 14.6226 20.3091C14.3853 20.3203 14.148 20.3303 13.9106 20.3391L13.7166 20.3451C13.2236 20.3591 12.6526 20.3661 11.5276 20.3681L10.7816 20.3691H9.4726C8.74286 20.3717 8.01312 20.364 7.2836 20.3461L7.0896 20.3401C6.85221 20.3312 6.61487 20.3208 6.3776 20.3091C5.3136 20.2591 4.5876 20.0911 3.9496 19.8441C3.28227 19.5935 2.67782 19.2 2.1786 18.6911C1.66965 18.1914 1.27582 17.5867 1.0246 16.9191C0.777601 16.2821 0.6096 15.5561 0.5596 14.4911C0.548459 14.2539 0.538459 14.0165 0.5296 13.7791L0.524601 13.5851C0.506173 12.856 0.497838 12.1266 0.4996 11.3971V9.34114C0.496809 8.61174 0.504144 7.88234 0.521601 7.15314L0.5286 6.95914C0.5366 6.73414 0.5466 6.51314 0.5586 6.24714C0.6086 5.18214 0.7766 4.45714 1.0236 3.81914C1.27471 3.15104 1.66932 2.54616 2.1796 2.04714C2.67869 1.53861 3.28274 1.14513 3.9496 0.894141C4.5876 0.647141 5.3126 0.479141 6.3776 0.429141C6.6436 0.417141 6.8656 0.407141 7.0896 0.399141L7.2836 0.393141C8.01279 0.375373 8.7422 0.367706 9.4716 0.370141L11.5276 0.369141ZM10.4996 5.36914C9.17352 5.36914 7.90175 5.89592 6.96407 6.83361C6.02638 7.77129 5.4996 9.04306 5.4996 10.3691C5.4996 11.6952 6.02638 12.967 6.96407 13.9047C7.90175 14.8424 9.17352 15.3691 10.4996 15.3691C11.8257 15.3691 13.0975 14.8424 14.0351 13.9047C14.9728 12.967 15.4996 11.6952 15.4996 10.3691C15.4996 9.04306 14.9728 7.77129 14.0351 6.83361C13.0975 5.89592 11.8257 5.36914 10.4996 5.36914ZM10.4996 7.36914C10.8936 7.36907 11.2837 7.44661 11.6477 7.59731C12.0117 7.74801 12.3424 7.96894 12.6211 8.24747C12.8997 8.526 13.1207 8.85668 13.2715 9.22063C13.4224 9.58458 13.5 9.97468 13.5001 10.3686C13.5002 10.7626 13.4226 11.1527 13.2719 11.5167C13.1212 11.8807 12.9003 12.2115 12.6218 12.4901C12.3432 12.7687 12.0126 12.9898 11.6486 13.1406C11.2847 13.2914 10.8946 13.3691 10.5006 13.3691C9.70495 13.3691 8.94189 13.0531 8.37928 12.4905C7.81667 11.9279 7.5006 11.1648 7.5006 10.3691C7.5006 9.57349 7.81667 8.81043 8.37928 8.24782C8.94189 7.68521 9.70495 7.36914 10.5006 7.36914M15.7506 3.86914C15.4191 3.86914 15.1011 4.00084 14.8667 4.23526C14.6323 4.46968 14.5006 4.78762 14.5006 5.11914C14.5006 5.45066 14.6323 5.7686 14.8667 6.00302C15.1011 6.23744 15.4191 6.36914 15.7506 6.36914C16.0821 6.36914 16.4001 6.23744 16.6345 6.00302C16.8689 5.7686 17.0006 5.45066 17.0006 5.11914C17.0006 4.78762 16.8689 4.46968 16.6345 4.23526C16.4001 4.00084 16.0821 3.86914 15.7506 3.86914Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                        <a class="footer-link-circle bg-red d-flex justify-content-center align-items-center" href="">
+                            <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.2506 8.92086L18.1 0.958984H16.4769L10.5296 7.87218L5.77948 0.958984H0.300781L7.48388 11.4129L0.300781 19.7622H1.92397L8.20452 12.4616L13.221 19.7622H18.6997L11.2502 8.92086H11.2506ZM2.50881 2.1809H5.00191L16.4777 18.5959H13.9846L2.50881 2.1809Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                        <a class="footer-link-circle bg-red d-flex justify-content-center align-items-center" href="">
+                            <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.125 0.0214844C1.56141 0.0214844 1.02091 0.245368 0.622398 0.643883C0.223883 1.0424 0 1.5829 0 2.14648C0 2.71007 0.223883 3.25057 0.622398 3.64909C1.02091 4.0476 1.56141 4.27148 2.125 4.27148C2.68859 4.27148 3.22909 4.0476 3.6276 3.64909C4.02612 3.25057 4.25 2.71007 4.25 2.14648C4.25 1.5829 4.02612 1.0424 3.6276 0.643883C3.22909 0.245368 2.68859 0.0214844 2.125 0.0214844ZM0.125 6.02148C0.0918479 6.02148 0.0600536 6.03465 0.0366116 6.0581C0.0131695 6.08154 0 6.11333 0 6.14648V19.1465C0 19.2155 0.056 19.2715 0.125 19.2715H4.125C4.15815 19.2715 4.18995 19.2583 4.21339 19.2349C4.23683 19.2114 4.25 19.1796 4.25 19.1465V6.14648C4.25 6.11333 4.23683 6.08154 4.21339 6.0581C4.18995 6.03465 4.15815 6.02148 4.125 6.02148H0.125ZM6.625 6.02148C6.59185 6.02148 6.56005 6.03465 6.53661 6.0581C6.51317 6.08154 6.5 6.11333 6.5 6.14648V19.1465C6.5 19.2155 6.556 19.2715 6.625 19.2715H10.625C10.6582 19.2715 10.6899 19.2583 10.7134 19.2349C10.7368 19.2114 10.75 19.1796 10.75 19.1465V12.1465C10.75 11.6492 10.9475 11.1723 11.2992 10.8207C11.6508 10.469 12.1277 10.2715 12.625 10.2715C13.1223 10.2715 13.5992 10.469 13.9508 10.8207C14.3025 11.1723 14.5 11.6492 14.5 12.1465V19.1465C14.5 19.2155 14.556 19.2715 14.625 19.2715H18.625C18.6582 19.2715 18.6899 19.2583 18.7134 19.2349C18.7368 19.2114 18.75 19.1796 18.75 19.1465V10.5265C18.75 8.09948 16.64 6.20148 14.225 6.42048C13.4778 6.4885 12.7459 6.67342 12.056 6.96848L10.75 7.52848V6.14648C10.75 6.11333 10.7368 6.08154 10.7134 6.0581C10.6899 6.03465 10.6582 6.02148 10.625 6.02148H6.625Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-4 col-6 mb-4 d-flex justify-content-start justify-content-sm-center">
+                    <ul class="list-unstyled mb-0">
+                        <li class="font-family-primary fw-semibold fs-5 lh-32 washed-black mb-20">Links</li>
+                        <li class="mb-12"><a
+                                class="text-decoration-none text-hover font-family-primary fw-normal fs-6 lh-25 washed-black"
+                                href="">Home</a></li>
+                        <li class="mb-12"><a
+                                class="text-decoration-none text-hover font-family-primary fw-normal fs-6 lh-25 washed-black"
+                                href="">About Us</a></li>
+                        <li class="mb-12"><a
+                                class="text-decoration-none text-hover font-family-primary fw-normal fs-6 lh-25 washed-black"
+                                href="">Services</a></li>
+                        <li><a class="text-decoration-none text-hover font-family-primary fw-normal fs-6 lh-25 washed-black"
+                                href="">Showcase</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-sm-4 col-6 mb-4 d-flex justify-content-start justify-content-sm-center">
+                    <ul class="list-unstyled mb-0">
+                        <li class="font-family-primary fw-semibold fs-5 lh-32 washed-black mb-20">Legal</li>
+                        <li class="mb-12"><a
+                                class="text-decoration-none text-hover font-family-primary fw-normal fs-6 lh-25 washed-black"
+                                href="">Terms Of Use</a></li>
+                        <li class="mb-12"><a
+                                class="text-decoration-none text-hover font-family-primary fw-normal fs-6 lh-25 washed-black"
+                                href="">Privacy Policy</a></li>
+                        <li><a class="text-decoration-none text-hover font-family-primary fw-normal fs-6 lh-25 washed-black"
+                                href="">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-sm-4 col-12 mb-4 d-flex justify-content-start justify-content-sm-center">
+                    <ul class="list-unstyled mb-0">
+                        <li class="font-family-primary fw-semibold fs-5 lh-32 washed-black mb-20">Product</li>
+                        <li class="mb-12"><a
+                                class="text-decoration-none text-hover font-family-primary fw-normal fs-6 lh-25 washed-black"
+                                href="">Take Tour</a></li>
+                        <li class="mb-12"><a
+                                class="text-decoration-none text-hover font-family-primary fw-normal fs-6 lh-25 washed-black"
+                                href="">Live Chat</a></li>
+                        <li><a class="text-decoration-none text-hover font-family-primary fw-normal fs-6 lh-25 washed-black"
+                                href="">Reveiws</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-sm-8 col-12 mb-4 d-flex justify-content-start justify-content-sm-start">
+                    <ul class="list-unstyled">
+                        <li class="font-family-primary fw-semibold fs-5 lh-32 washed-black mb-20">Newsletter</li>
+                        <li class="mb-12"><a
+                                class="text-decoration-none text-hover font-family-primary fw-normal fs-6 lh-25 washed-black"
+                                href="">Stay up to date</a></li>
+                        <li class="position-relative">
+                            <input
+                                class="footer-input font-family-primary fw-normal fs-6 lh-26 mb-3 mb-sm-0 color-light-grey"
+                                type="email" placeholder="Your email ">
+                            <button
+                                class="footer-btn position- absolute bg-red border-0 font-family-primary fw-semibold fs-6 lh-26 text-white">Subscribe</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="line position-relative"></div>
+        <p class="font-family-primary fw-normal fs-6 lh-25 washed-black text-center py-3 mb-0">Copyright 2025
+            ceramicsolutions.com all rights reserved</p>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
