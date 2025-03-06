@@ -154,6 +154,38 @@
 .get-btn {
     padding: 20px 32px;
     border-radius: 56px;
+    transition: all 200ms linear;
+}
+
+.get-btn-2:hover {
+    background-color: white !important;
+    color: var(--bg-red) !important;
+    border-color: var(--bg-red) !important;
+}
+
+.get-btn:hover {
+    background-color: white !important;
+    color: var(--bg-red) !important;
+    border-color: var(--bg-red) !important;
+}
+
+.get-btn-2 {
+    padding: 20px 32px;
+    border-radius: 56px;
+    border: 2px solid white;
+    transition: all 200ms linear;
+}
+
+.get-btn-3 {
+    padding: 20px 32px;
+    border-radius: 56px;
+    border: 2px solid white;
+    transition: all 200ms linear;
+}
+
+.get-btn-3:hover {
+    background-color: var(--bg-red) !important;
+    color: white !important;
 }
 
 .mb-72 {
@@ -288,6 +320,12 @@
     padding: 20px 32px;
     border-radius: 56px;
     border: 1px solid var(--color-red);
+    transition: all 200ms linear;
+}
+
+.view-btn:hover {
+    background-color: var(--color-red) !important;
+    color: var(--color-white) !important;
 }
 
 .max-w-485 {
@@ -414,6 +452,13 @@
     border-radius: 62px;
     right: 10px !important;
     top: 8.14px;
+    transition: all 200ms linear;
+    border: 1px solid white;
+}
+.footer-btn:hover {
+    background-color: white;
+    color: var(--bg-red) !important;
+    border-color: var(--bg-red) !important;
 }
 
 .line::before {
